@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classFoo" kind="class" prot="public">
+    <compoundname>Foo</compoundname>
+    <basecompoundref refid="classFeedSubscriber" prot="public" virt="non-virtual">FeedSubscriber</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFoo_15c036d1b3561a0e1beffe8c6799a4276" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Foo::Foo</definition>
+        <argsstring>()</argsstring>
+        <name>Foo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/taskenginetest.cpp" line="11" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/taskenginetest.cpp" bodystart="84" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classFoo_1845f0eabe78a817079e1224e3227f748" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Foo::doSomething</definition>
+        <argsstring>()</argsstring>
+        <name>doSomething</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/taskenginetest.cpp" line="12" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/taskenginetest.cpp" bodystart="88" bodyend="116"/>
+        <references refid="structDataContainer_1febb3fde8b4ae1fa777b0f736fb67803" compoundref="DataContainer_8h" startline="32">DataContainer::data</references>
+        <references refid="classInformationManager_1f8c2f2bbacaf72b49bed72b5b0cf8225" compoundref="InformationManager_8cpp" startline="28" endline="36">InformationManager::Instance</references>
+        <references refid="classThreadmanager_184cdd48efc05526b018baa188f0ffd8f" compoundref="Threadmanager_8cpp" startline="87" endline="90">Threadmanager::registerTask</references>
+        <references refid="classInformationManager_173a67ade9880878f70d2acae368af900" compoundref="InformationManager_8cpp" startline="43" endline="58">InformationManager::requestData</references>
+        <references refid="classTask_1934daf1fa163140db2909242dc27925a" compoundref="Task_8cpp" startline="31" endline="39">Task::run</references>
+        <references refid="classThreadmanager_18d4d1b71a3ae70cbb6b6d6bede4bd053" compoundref="Threadmanager_8cpp" startline="82" endline="85">Threadmanager::setThreadingMode</references>
+        <references refid="classBaz_19850a702d4cda997589737cc7b60d37c" compoundref="taskenginetest_8cpp" startline="20">Baz::sleepTime</references>
+        <references refid="classInformationManager_1edfe1021c3803f5521eedf3d1a033001" compoundref="InformationManager_8cpp" startline="71" endline="74">InformationManager::subscribeToFeed</references>
+        <references refid="Threadmanager_8h_19d3dfacc03e506818179646b542c33e241268899b287c223842ec09900ad9ee1" compoundref="Threadmanager_8h" startline="29">THREADING_FREE_WHEELING</references>
+        <references refid="classThreadmanager_1d5d761af3ed38a3dfe9c4400a4445fbc" compoundref="Threadmanager_8cpp" startline="70" endline="80">Threadmanager::waitForThreadsToFinish</references>
+        <referencedby refid="taskenginetest_8cpp_13c04138a5bfe5d72780bb7e82a18e627" compoundref="taskenginetest_8cpp" startline="125" endline="132">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFoo_14c5b4fa3f309ca3a850a3c43436a2dbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Foo::receiveData</definition>
+        <argsstring>(std::string feedName, DataContainer data)</argsstring>
+        <name>receiveData</name>
+        <reimplements refid="classFeedSubscriber_10446a562cef5bbb5562ba057f72065ab">receiveData</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>feedName</declname>
+        </param>
+        <param>
+          <type><ref refid="structDataContainer" kindref="compound">DataContainer</ref></type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/taskenginetest.cpp" line="13" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/taskenginetest.cpp" bodystart="118" bodyend="122"/>
+        <references refid="structDataContainer_1febb3fde8b4ae1fa777b0f736fb67803" compoundref="DataContainer_8h" startline="32">DataContainer::data</references>
+        <references refid="debug_8h_13e3c70251bcc0d8ada795cb86e74142a" compoundref="debug_8h" startline="84">Dout</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="65">
+        <label>FeedSubscriber</label>
+        <link refid="classFeedSubscriber"/>
+      </node>
+      <node id="64">
+        <label>Foo</label>
+        <link refid="classFoo"/>
+        <childnode refid="65" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="67">
+        <label>FeedSubscriber</label>
+        <link refid="classFeedSubscriber"/>
+      </node>
+      <node id="66">
+        <label>Foo</label>
+        <link refid="classFoo"/>
+        <childnode refid="67" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/mononofu/Programmieren/TaskEngine/src/taskenginetest.cpp" line="9" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/taskenginetest.cpp" bodystart="8" bodyend="14"/>
+    <listofallmembers>
+      <member refid="classFoo_1845f0eabe78a817079e1224e3227f748" prot="public" virt="non-virtual"><scope>Foo</scope><name>doSomething</name></member>
+      <member refid="classFoo_15c036d1b3561a0e1beffe8c6799a4276" prot="public" virt="non-virtual"><scope>Foo</scope><name>Foo</name></member>
+      <member refid="classFeedSubscriber_18b866e7ab680b8b06cf2ca7ebc7dd94e" prot="public" virt="non-virtual"><scope>Foo</scope><name>InformationManager</name></member>
+      <member refid="classFoo_14c5b4fa3f309ca3a850a3c43436a2dbc" prot="public" virt="virtual"><scope>Foo</scope><name>receiveData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classBaz" kind="class" prot="public">
+    <compoundname>Baz</compoundname>
+    <basecompoundref refid="classTask" prot="public" virt="non-virtual">Task</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classBaz_19850a702d4cda997589737cc7b60d37c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Baz::sleepTime</definition>
+        <argsstring></argsstring>
+        <name>sleepTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/taskenginetest.cpp" line="20" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/taskenginetest.cpp" bodystart="20" bodyend="-1"/>
+        <referencedby refid="classFoo_1845f0eabe78a817079e1224e3227f748" compoundref="taskenginetest_8cpp" startline="88" endline="116">Foo::doSomething</referencedby>
+        <referencedby refid="classBaz_12b1607ab4b3771bfb4c2763eee9ecfd8" compoundref="taskenginetest_8cpp" startline="35" endline="48">doStep</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classBaz_16c43c5174ae6045efc515ea9d7286284" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; Baz::log</definition>
+        <argsstring></argsstring>
+        <name>log</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/taskenginetest.cpp" line="25" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/taskenginetest.cpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBaz_14dc884483d03246854174cdfbcfc47e3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Baz::steps</definition>
+        <argsstring></argsstring>
+        <name>steps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/taskenginetest.cpp" line="26" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/taskenginetest.cpp" bodystart="26" bodyend="-1"/>
+        <referencedby refid="classBaz_18ad601dcddeec5999ec0a98de346a41c" compoundref="taskenginetest_8cpp" startline="19" endline="19">Baz</referencedby>
+        <referencedby refid="classBaz_12b1607ab4b3771bfb4c2763eee9ecfd8" compoundref="taskenginetest_8cpp" startline="35" endline="48">doStep</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classBaz_18ad601dcddeec5999ec0a98de346a41c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Baz::Baz</definition>
+        <argsstring>()</argsstring>
+        <name>Baz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/taskenginetest.cpp" line="19" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/taskenginetest.cpp" bodystart="19" bodyend="19"/>
+        <references refid="classBaz_14dc884483d03246854174cdfbcfc47e3" compoundref="taskenginetest_8cpp" startline="26">steps</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classBaz_12b1607ab4b3771bfb4c2763eee9ecfd8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Baz::doStep</definition>
+        <argsstring>()</argsstring>
+        <name>doStep</name>
+        <reimplements refid="classTask_13d4b421d5f855c51770451f4a25cf1e8">doStep</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/taskenginetest.cpp" line="22" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/taskenginetest.cpp" bodystart="35" bodyend="48"/>
+        <references refid="debug_8h_13e3c70251bcc0d8ada795cb86e74142a" compoundref="debug_8h" startline="84">Dout</references>
+        <references refid="classBaz_19850a702d4cda997589737cc7b60d37c" compoundref="taskenginetest_8cpp" startline="20">sleepTime</references>
+        <references refid="classBaz_14dc884483d03246854174cdfbcfc47e3" compoundref="taskenginetest_8cpp" startline="26">steps</references>
+      </memberdef>
+      <memberdef kind="function" id="classBaz_17c3e1f88e238ada02a582230ed0d3685" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Baz::threadWillStart</definition>
+        <argsstring>()</argsstring>
+        <name>threadWillStart</name>
+        <reimplements refid="classTask_1e1f9f9e7cb5f2e26e159b0bd612312bc">threadWillStart</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/taskenginetest.cpp" line="23" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/taskenginetest.cpp" bodystart="30" bodyend="33"/>
+        <references refid="classInformationManager_1f8c2f2bbacaf72b49bed72b5b0cf8225" compoundref="InformationManager_8cpp" startline="28" endline="36">InformationManager::Instance</references>
+        <references refid="classInformationManager_1a526442bedb26d508648e7e15aa9a5a4" compoundref="InformationManager_8cpp" startline="60" endline="69">InformationManager::postDataToFeed</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="45">
+        <label>Baz</label>
+        <link refid="classBaz"/>
+        <childnode refid="46" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>Task</label>
+        <link refid="classTask"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="47">
+        <label>Baz</label>
+        <link refid="classBaz"/>
+        <childnode refid="48" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>SynchronisationBarrier</label>
+        <link refid="classSynchronisationBarrier"/>
+      </node>
+      <node id="48">
+        <label>Task</label>
+        <link refid="classTask"/>
+        <childnode refid="49" relation="usage">
+          <edgelabel>barrier</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/mononofu/Programmieren/TaskEngine/src/taskenginetest.cpp" line="17" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/taskenginetest.cpp" bodystart="16" bodyend="28"/>
+    <listofallmembers>
+      <member refid="classBaz_18ad601dcddeec5999ec0a98de346a41c" prot="public" virt="non-virtual"><scope>Baz</scope><name>Baz</name></member>
+      <member refid="classBaz_12b1607ab4b3771bfb4c2763eee9ecfd8" prot="protected" virt="virtual"><scope>Baz</scope><name>doStep</name></member>
+      <member refid="classBaz_16c43c5174ae6045efc515ea9d7286284" prot="private" virt="non-virtual"><scope>Baz</scope><name>log</name></member>
+      <member refid="classTask_10c57c76ff62ca6333e62158861883cbe" prot="protected" virt="non-virtual"><scope>Baz</scope><name>mainLoop</name></member>
+      <member refid="classTask_1934daf1fa163140db2909242dc27925a" prot="public" virt="non-virtual"><scope>Baz</scope><name>run</name></member>
+      <member refid="classTask_14814188fd4a04ed4ad18b002f848569f" prot="protected" virt="non-virtual"><scope>Baz</scope><name>running</name></member>
+      <member refid="classTask_193c2dd660089352166c5f3c1437a552f" prot="public" virt="non-virtual"><scope>Baz</scope><name>setSpeedFactor</name></member>
+      <member refid="classTask_15eedf2c701b1a4e797ef6dfd178ff8f2" prot="protected" virt="non-virtual"><scope>Baz</scope><name>setSynchronisationBarrier</name></member>
+      <member refid="classBaz_19850a702d4cda997589737cc7b60d37c" prot="public" virt="non-virtual"><scope>Baz</scope><name>sleepTime</name></member>
+      <member refid="classBaz_14dc884483d03246854174cdfbcfc47e3" prot="private" virt="non-virtual"><scope>Baz</scope><name>steps</name></member>
+      <member refid="classTask_1ba5eb3d6c2a034aa0e319383fbec68c4" prot="public" virt="non-virtual"><scope>Baz</scope><name>stop</name></member>
+      <member refid="classTask_10ca53354bdc006762a0fda68c64f7608" prot="public" virt="non-virtual"><scope>Baz</scope><name>Task</name></member>
+      <member refid="classTask_139d5bf06f3cd6eaa35af62b381c297b7" prot="protected" virt="non-virtual"><scope>Baz</scope><name>thisThread</name></member>
+      <member refid="classTask_1f3418a701f39caa26c06ff78f70c4f55" prot="public" virt="non-virtual"><scope>Baz</scope><name>Threadmanager</name></member>
+      <member refid="classBaz_17c3e1f88e238ada02a582230ed0d3685" prot="protected" virt="virtual"><scope>Baz</scope><name>threadWillStart</name></member>
+      <member refid="classTask_1b5f3345402ec08681fba06a051a235be" prot="protected" virt="virtual"><scope>Baz</scope><name>threadWillStop</name></member>
+      <member refid="classTask_1b9e4f3d7fc97a09099bbab53735cf4c7" prot="protected" virt="virtual"><scope>Baz</scope><name>willStartThreadOnMe</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

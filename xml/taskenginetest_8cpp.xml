@@ -1,0 +1,400 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="taskenginetest_8cpp" kind="file">
+    <compoundname>taskenginetest.cpp</compoundname>
+    <includes refid="taskengine_8h" local="yes">taskengine.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">sstream</includes>
+    <includes local="no">string</includes>
+    <includes local="no">time.h</includes>
+    <includes refid="debug_8h" local="yes">debug.h</includes>
+    <incdepgraph>
+      <node id="504">
+        <label>Destroyer.h</label>
+        <link refid="Destroyer_8h"/>
+      </node>
+      <node id="529">
+        <label>boost/log/utility/scoped_attribute.hpp</label>
+      </node>
+      <node id="511">
+        <label>Threadmanager.h</label>
+        <link refid="Threadmanager_8h"/>
+        <childnode refid="510" relation="include">
+        </childnode>
+        <childnode refid="507" relation="include">
+        </childnode>
+        <childnode refid="512" relation="include">
+        </childnode>
+      </node>
+      <node id="518">
+        <label>boost/log/sources/basic_logger.hpp</label>
+      </node>
+      <node id="525">
+        <label>boost/log/formatters/attr.hpp</label>
+      </node>
+      <node id="497">
+        <label>taskengine.h</label>
+        <link refid="taskengine_8h"/>
+        <childnode refid="498" relation="include">
+        </childnode>
+        <childnode refid="502" relation="include">
+        </childnode>
+        <childnode refid="499" relation="include">
+        </childnode>
+        <childnode refid="501" relation="include">
+        </childnode>
+        <childnode refid="505" relation="include">
+        </childnode>
+        <childnode refid="508" relation="include">
+        </childnode>
+        <childnode refid="510" relation="include">
+        </childnode>
+        <childnode refid="511" relation="include">
+        </childnode>
+        <childnode refid="513" relation="include">
+        </childnode>
+      </node>
+      <node id="515">
+        <label>boost/log/core.hpp</label>
+      </node>
+      <node id="510">
+        <label>Task.h</label>
+        <link refid="Task_8h"/>
+        <childnode refid="508" relation="include">
+        </childnode>
+      </node>
+      <node id="500">
+        <label>string</label>
+      </node>
+      <node id="506">
+        <label>map</label>
+      </node>
+      <node id="512">
+        <label>boost/thread.hpp</label>
+      </node>
+      <node id="519">
+        <label>boost/log/sources/severity_logger.hpp</label>
+      </node>
+      <node id="513">
+        <label>debug.h</label>
+        <link refid="debug_8h"/>
+        <childnode refid="514" relation="include">
+        </childnode>
+        <childnode refid="515" relation="include">
+        </childnode>
+        <childnode refid="516" relation="include">
+        </childnode>
+        <childnode refid="517" relation="include">
+        </childnode>
+        <childnode refid="518" relation="include">
+        </childnode>
+        <childnode refid="519" relation="include">
+        </childnode>
+        <childnode refid="520" relation="include">
+        </childnode>
+        <childnode refid="521" relation="include">
+        </childnode>
+        <childnode refid="522" relation="include">
+        </childnode>
+        <childnode refid="523" relation="include">
+        </childnode>
+        <childnode refid="524" relation="include">
+        </childnode>
+        <childnode refid="525" relation="include">
+        </childnode>
+        <childnode refid="526" relation="include">
+        </childnode>
+        <childnode refid="527" relation="include">
+        </childnode>
+        <childnode refid="528" relation="include">
+        </childnode>
+        <childnode refid="529" relation="include">
+        </childnode>
+      </node>
+      <node id="503">
+        <label>boost/any.hpp</label>
+      </node>
+      <node id="501">
+        <label>DataProvider.h</label>
+        <link refid="DataProvider_8h"/>
+        <childnode refid="499" relation="include">
+        </childnode>
+        <childnode refid="502" relation="include">
+        </childnode>
+      </node>
+      <node id="528">
+        <label>boost/log/utility/empty_deleter.hpp</label>
+      </node>
+      <node id="517">
+        <label>boost/log/attributes/counter.hpp</label>
+      </node>
+      <node id="527">
+        <label>boost/log/formatters/message.hpp</label>
+      </node>
+      <node id="526">
+        <label>boost/log/formatters/date_time.hpp</label>
+      </node>
+      <node id="498">
+        <label>InformationManager.h</label>
+        <link refid="InformationManager_8h"/>
+        <childnode refid="499" relation="include">
+        </childnode>
+        <childnode refid="501" relation="include">
+        </childnode>
+        <childnode refid="504" relation="include">
+        </childnode>
+        <childnode refid="505" relation="include">
+        </childnode>
+        <childnode refid="506" relation="include">
+        </childnode>
+        <childnode refid="500" relation="include">
+        </childnode>
+        <childnode refid="507" relation="include">
+        </childnode>
+      </node>
+      <node id="507">
+        <label>vector</label>
+      </node>
+      <node id="509">
+        <label>boost/thread/barrier.hpp</label>
+      </node>
+      <node id="531">
+        <label>sstream</label>
+      </node>
+      <node id="496">
+        <label>Programmieren/TaskEngine/src/taskenginetest.cpp</label>
+        <link refid="taskenginetest.cpp"/>
+        <childnode refid="497" relation="include">
+        </childnode>
+        <childnode refid="530" relation="include">
+        </childnode>
+        <childnode refid="531" relation="include">
+        </childnode>
+        <childnode refid="500" relation="include">
+        </childnode>
+        <childnode refid="532" relation="include">
+        </childnode>
+        <childnode refid="513" relation="include">
+        </childnode>
+      </node>
+      <node id="523">
+        <label>boost/log/sinks/text_ostream_backend.hpp</label>
+      </node>
+      <node id="532">
+        <label>time.h</label>
+      </node>
+      <node id="521">
+        <label>boost/log/sources/record_ostream.hpp</label>
+      </node>
+      <node id="530">
+        <label>iostream</label>
+      </node>
+      <node id="520">
+        <label>boost/log/sources/global_logger_storage.hpp</label>
+      </node>
+      <node id="505">
+        <label>FeedSubscriber.h</label>
+        <link refid="FeedSubscriber_8h"/>
+      </node>
+      <node id="502">
+        <label>DataContainer.h</label>
+        <link refid="DataContainer_8h"/>
+        <childnode refid="499" relation="include">
+        </childnode>
+        <childnode refid="503" relation="include">
+        </childnode>
+      </node>
+      <node id="516">
+        <label>boost/log/attributes/clock.hpp</label>
+      </node>
+      <node id="508">
+        <label>SynchronisationBarrier.h</label>
+        <link refid="SynchronisationBarrier_8h"/>
+        <childnode refid="509" relation="include">
+        </childnode>
+      </node>
+      <node id="514">
+        <label>boost/log/common.hpp</label>
+      </node>
+      <node id="499">
+        <label>DataIdentifier.h</label>
+        <link refid="DataIdentifier_8h"/>
+        <childnode refid="500" relation="include">
+        </childnode>
+      </node>
+      <node id="524">
+        <label>boost/log/formatters/format.hpp</label>
+      </node>
+      <node id="522">
+        <label>boost/log/sinks/sink.hpp</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classFoo" prot="public">Foo</innerclass>
+    <innerclass refid="classBaz" prot="public">Baz</innerclass>
+    <innerclass refid="classBar" prot="public">Bar</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="taskenginetest_8cpp_13c04138a5bfe5d72780bb7e82a18e627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char **argv)</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/taskenginetest.cpp" line="126" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/taskenginetest.cpp" bodystart="125" bodyend="132"/>
+        <references refid="classFoo_1845f0eabe78a817079e1224e3227f748" compoundref="taskenginetest_8cpp" startline="88" endline="116">Foo::doSomething</references>
+        <references refid="debug_8cpp_10b7438b525ca7565e60bcab4d2d70805" compoundref="debug_8cpp" startline="34" endline="50">initDebug</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="taskengine_8h" kindref="compound">taskengine.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;time.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="debug_8h" kindref="compound">debug.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="classFoo" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFoo" kindref="compound">Foo</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classFeedSubscriber" kindref="compound">FeedSubscriber</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFoo_15c036d1b3561a0e1beffe8c6799a4276" kindref="member">Foo</ref>();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFoo_1845f0eabe78a817079e1224e3227f748" kindref="member">doSomething</ref>();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFoo_14c5b4fa3f309ca3a850a3c43436a2dbc" kindref="member">receiveData</ref>(std::string<sp/>feedName,<sp/><ref refid="structDataContainer" kindref="compound">DataContainer</ref><sp/>data);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classBaz" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classBaz" kindref="compound">Baz</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classTask" kindref="compound">Task</ref></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19" refid="classBaz_18ad601dcddeec5999ec0a98de346a41c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classBaz_18ad601dcddeec5999ec0a98de346a41c" kindref="member">Baz</ref>()<sp/>{<sp/><ref refid="classBaz_14dc884483d03246854174cdfbcfc47e3" kindref="member">steps</ref><sp/>=<sp/>0;<sp/>}</highlight></codeline>
+<codeline lineno="20" refid="classBaz_19850a702d4cda997589737cc7b60d37c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classBaz_19850a702d4cda997589737cc7b60d37c" kindref="member">sleepTime</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classBaz_12b1607ab4b3771bfb4c2763eee9ecfd8" kindref="member">doStep</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classBaz_17c3e1f88e238ada02a582230ed0d3685" kindref="member">threadWillStart</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25" refid="classBaz_16c43c5174ae6045efc515ea9d7286284" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/><ref refid="classBaz_16c43c5174ae6045efc515ea9d7286284" kindref="member">log</ref>;</highlight></codeline>
+<codeline lineno="26" refid="classBaz_14dc884483d03246854174cdfbcfc47e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classBaz_14dc884483d03246854174cdfbcfc47e3" kindref="member">steps</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="classBaz_17c3e1f88e238ada02a582230ed0d3685" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classBaz_17c3e1f88e238ada02a582230ed0d3685" kindref="member">Baz::threadWillStart</ref>()</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classInformationManager_1f8c2f2bbacaf72b49bed72b5b0cf8225" kindref="member">InformationManager::Instance</ref>()-&gt;<ref refid="classInformationManager_1a526442bedb26d508648e7e15aa9a5a4" kindref="member">postDataToFeed</ref>(</highlight><highlight class="stringliteral">&quot;system&quot;</highlight><highlight class="normal">,<sp/><ref refid="structDataContainer" kindref="compound">DataContainer</ref>(std::string(</highlight><highlight class="stringliteral">&quot;Thread<sp/>started&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="classBaz_12b1607ab4b3771bfb4c2763eee9ecfd8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classBaz_12b1607ab4b3771bfb4c2763eee9ecfd8" kindref="member">Baz::doStep</ref>()</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{<sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>time_t<sp/>myTime<sp/>=<sp/>time(NULL);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::this_thread::sleep(boost::posix_time::milliseconds(<ref refid="classBaz_19850a702d4cda997589737cc7b60d37c" kindref="member">sleepTime</ref><sp/>*<sp/>1000));</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>time_t<sp/>mySecondTime<sp/>=<sp/>time(NULL);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="debug_8h_13e3c70251bcc0d8ada795cb86e74142a" kindref="member">Dout</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Slept<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>(mySecondTime<sp/>-<sp/>myTime)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>seconds<sp/>-<sp/>Baz-Step<sp/>executed&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classBaz_14dc884483d03246854174cdfbcfc47e3" kindref="member">steps</ref>++;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(steps<sp/>&gt;<sp/>10)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="classBar" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classBar" kindref="compound">Bar</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classDataProvider" kindref="compound">DataProvider</ref></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="53" refid="classBar_19cae2188fcc6cce41caa7898c64548d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classBar" kindref="compound">Bar</ref>()<sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classInformationManager_1f8c2f2bbacaf72b49bed72b5b0cf8225" kindref="member">InformationManager::Instance</ref>()-&gt;<ref refid="classInformationManager_1efc9a4ab1ccfcf8519a90d99985d3ba6" kindref="member">offerData</ref>(</highlight><highlight class="stringliteral">&quot;system&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classInformationManager_1f8c2f2bbacaf72b49bed72b5b0cf8225" kindref="member">InformationManager::Instance</ref>()-&gt;<ref refid="classInformationManager_1efc9a4ab1ccfcf8519a90d99985d3ba6" kindref="member">offerData</ref>(</highlight><highlight class="stringliteral">&quot;mistake&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58" refid="classBar_12d285596b5a4ab73bbb903bc8a3c9ffc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structDataContainer" kindref="compound">DataContainer</ref><sp/>getData(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classDataIdentifier" kindref="compound">DataIdentifier</ref>&amp;<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">.isPartOf(<sp/></highlight><highlight class="stringliteral">&quot;system&quot;</highlight><highlight class="normal"><sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">.isPartOf(<sp/></highlight><highlight class="stringliteral">&quot;system.greeting&quot;</highlight><highlight class="normal"><sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structDataContainer" kindref="compound">DataContainer</ref>(std::string(</highlight><highlight class="stringliteral">&quot;Sample<sp/>Data&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">.isPartOf(<sp/></highlight><highlight class="stringliteral">&quot;system.number&quot;</highlight><highlight class="normal"><sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structDataContainer" kindref="compound">DataContainer</ref>(3232);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structDataContainer" kindref="compound">DataContainer</ref>(std::string(</highlight><highlight class="stringliteral">&quot;data<sp/>n/a&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structDataContainer" kindref="compound">DataContainer</ref>(std::string(</highlight><highlight class="stringliteral">&quot;not<sp/>responsible<sp/>for<sp/>this&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="classFoo_15c036d1b3561a0e1beffe8c6799a4276" refkind="member"><highlight class="normal"><ref refid="classFoo_15c036d1b3561a0e1beffe8c6799a4276" kindref="member">Foo::Foo</ref>()</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="classFoo_1845f0eabe78a817079e1224e3227f748" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFoo_1845f0eabe78a817079e1224e3227f748" kindref="member">Foo::doSomething</ref>()</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classBar" kindref="compound">Bar</ref><sp/>myBar;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structDataContainer" kindref="compound">DataContainer</ref><sp/>data<sp/>=<sp/><ref refid="classInformationManager_1f8c2f2bbacaf72b49bed72b5b0cf8225" kindref="member">InformationManager::Instance</ref>()-&gt;<ref refid="classInformationManager_173a67ade9880878f70d2acae368af900" kindref="member">requestData</ref>(</highlight><highlight class="stringliteral">&quot;system.greeting&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>=<sp/>boost::any_cast&lt;std::string&gt;(data.<ref refid="structDataContainer_1febb3fde8b4ae1fa777b0f736fb67803" kindref="member">data</ref>);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Hello<sp/>world<sp/>!\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data<sp/>=<sp/><ref refid="classInformationManager_1f8c2f2bbacaf72b49bed72b5b0cf8225" kindref="member">InformationManager::Instance</ref>()-&gt;<ref refid="classInformationManager_173a67ade9880878f70d2acae368af900" kindref="member">requestData</ref>(</highlight><highlight class="stringliteral">&quot;system.text&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>=<sp/>boost::any_cast&lt;std::string&gt;(data.<ref refid="structDataContainer_1febb3fde8b4ae1fa777b0f736fb67803" kindref="member">data</ref>);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data<sp/>=<sp/><ref refid="classInformationManager_1f8c2f2bbacaf72b49bed72b5b0cf8225" kindref="member">InformationManager::Instance</ref>()-&gt;<ref refid="classInformationManager_173a67ade9880878f70d2acae368af900" kindref="member">requestData</ref>(</highlight><highlight class="stringliteral">&quot;mistake.dda&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>=<sp/>boost::any_cast&lt;std::string&gt;(data.<ref refid="structDataContainer_1febb3fde8b4ae1fa777b0f736fb67803" kindref="member">data</ref>);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data<sp/>=<sp/><ref refid="classInformationManager_1f8c2f2bbacaf72b49bed72b5b0cf8225" kindref="member">InformationManager::Instance</ref>()-&gt;<ref refid="classInformationManager_173a67ade9880878f70d2acae368af900" kindref="member">requestData</ref>(</highlight><highlight class="stringliteral">&quot;system.number&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num<sp/>=<sp/>boost::any_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&gt;(data.<ref refid="structDataContainer_1febb3fde8b4ae1fa777b0f736fb67803" kindref="member">data</ref>);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>num<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classInformationManager_1f8c2f2bbacaf72b49bed72b5b0cf8225" kindref="member">InformationManager::Instance</ref>()-&gt;<ref refid="classInformationManager_1edfe1021c3803f5521eedf3d1a033001" kindref="member">subscribeToFeed</ref>(</highlight><highlight class="stringliteral">&quot;system&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classThreadmanager" kindref="compound">Threadmanager</ref><sp/>myManager;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>myManager.<ref refid="classThreadmanager_18d4d1b71a3ae70cbb6b6d6bede4bd053" kindref="member">setThreadingMode</ref>(<ref refid="Threadmanager_8h_19d3dfacc03e506818179646b542c33e241268899b287c223842ec09900ad9ee1" kindref="member">THREADING_FREE_WHEELING</ref>);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classBaz" kindref="compound">Baz</ref><sp/>myTask,<sp/>myOtherTask;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>myTask.<ref refid="classBaz_19850a702d4cda997589737cc7b60d37c" kindref="member">sleepTime</ref><sp/>=<sp/>0.5;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>myOtherTask.<ref refid="classBaz_19850a702d4cda997589737cc7b60d37c" kindref="member">sleepTime</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>myManager.<ref refid="classThreadmanager_184cdd48efc05526b018baa188f0ffd8f" kindref="member">registerTask</ref>(&amp;myTask);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>myManager.<ref refid="classThreadmanager_184cdd48efc05526b018baa188f0ffd8f" kindref="member">registerTask</ref>(&amp;myOtherTask);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>myManager.<ref refid="classTask_1934daf1fa163140db2909242dc27925a" kindref="member">run</ref>();</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>myManager.<ref refid="classThreadmanager_1d5d761af3ed38a3dfe9c4400a4445fbc" kindref="member">waitForThreadsToFinish</ref>();</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="classFoo_14c5b4fa3f309ca3a850a3c43436a2dbc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFoo_14c5b4fa3f309ca3a850a3c43436a2dbc" kindref="member">Foo::receiveData</ref>(std::string<sp/>feedName,<sp/><ref refid="structDataContainer" kindref="compound">DataContainer</ref><sp/>data)</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>myString<sp/>=<sp/>boost::any_cast&lt;std::string&gt;(data.<ref refid="structDataContainer_1febb3fde8b4ae1fa777b0f736fb67803" kindref="member">data</ref>);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="debug_8h_13e3c70251bcc0d8ada795cb86e74142a" kindref="member">Dout</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Received<sp/>data:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>myString<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>for<sp/>feed:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>feedName;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="taskenginetest_8cpp_13c04138a5bfe5d72780bb7e82a18e627" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="CMakeFiles_2CompilerIdC_2CMakeCCompilerId_8c_10ddf1224851353fc92bfbff6f499fa97" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">**<sp/>argv)</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//threadNames[<sp/>boost::this_thread::get_id()<sp/>]<sp/>=<sp/>&quot;Main<sp/>Thread&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="debug_8cpp_10b7438b525ca7565e60bcab4d2d70805" kindref="member">initDebug</ref>();</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFoo" kindref="compound">Foo</ref><sp/>foo;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>foo.<ref refid="classFoo_1845f0eabe78a817079e1224e3227f748" kindref="member">doSomething</ref>();</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/mononofu/Programmieren/TaskEngine/src/taskenginetest.cpp"/>
+  </compounddef>
+</doxygen>

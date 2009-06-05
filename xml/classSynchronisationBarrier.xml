@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classSynchronisationBarrier" kind="class" prot="public">
+    <compoundname>SynchronisationBarrier</compoundname>
+    <includes refid="SynchronisationBarrier_8h" local="no">SynchronisationBarrier.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classSynchronisationBarrier_14e00c5cd4c84c4e1cc3cbfa4f95132a1" prot="private" static="no" mutable="no">
+        <type>boost::barrier *</type>
+        <definition>boost::barrier* SynchronisationBarrier::barrier</definition>
+        <argsstring></argsstring>
+        <name>barrier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/SynchronisationBarrier.h" line="34" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/SynchronisationBarrier.h" bodystart="34" bodyend="-1"/>
+        <referencedby refid="classSynchronisationBarrier_10e5e35b270dd20cbe96da4f19ec3e176" compoundref="SynchronisationBarrier_8cpp" startline="34" endline="42">signIn</referencedby>
+        <referencedby refid="classSynchronisationBarrier_11d86d60167d0022b90fbb85c73f6ed42" compoundref="SynchronisationBarrier_8cpp" startline="44" endline="59">signOut</referencedby>
+        <referencedby refid="classSynchronisationBarrier_1194738032a7876605b60216b86b077f1" compoundref="SynchronisationBarrier_8cpp" startline="29" endline="32">stepDone</referencedby>
+        <referencedby refid="classSynchronisationBarrier_11ce996a82154d365f9b2f0b47599cf15" compoundref="SynchronisationBarrier_8cpp" startline="23" endline="27">SynchronisationBarrier</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classSynchronisationBarrier_167fd00d10dead71f86445ba80265e467" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int SynchronisationBarrier::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/SynchronisationBarrier.h" line="35" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/SynchronisationBarrier.h" bodystart="35" bodyend="-1"/>
+        <referencedby refid="classSynchronisationBarrier_10e5e35b270dd20cbe96da4f19ec3e176" compoundref="SynchronisationBarrier_8cpp" startline="34" endline="42">signIn</referencedby>
+        <referencedby refid="classSynchronisationBarrier_11d86d60167d0022b90fbb85c73f6ed42" compoundref="SynchronisationBarrier_8cpp" startline="44" endline="59">signOut</referencedby>
+        <referencedby refid="classSynchronisationBarrier_11ce996a82154d365f9b2f0b47599cf15" compoundref="SynchronisationBarrier_8cpp" startline="23" endline="27">SynchronisationBarrier</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classSynchronisationBarrier_11ce996a82154d365f9b2f0b47599cf15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SynchronisationBarrier::SynchronisationBarrier</definition>
+        <argsstring>()</argsstring>
+        <name>SynchronisationBarrier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/SynchronisationBarrier.h" line="29" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/SynchronisationBarrier.cpp" bodystart="23" bodyend="27"/>
+        <references refid="classSynchronisationBarrier_14e00c5cd4c84c4e1cc3cbfa4f95132a1" compoundref="SynchronisationBarrier_8h" startline="34">barrier</references>
+        <references refid="classSynchronisationBarrier_167fd00d10dead71f86445ba80265e467" compoundref="SynchronisationBarrier_8h" startline="35">count</references>
+      </memberdef>
+      <memberdef kind="function" id="classSynchronisationBarrier_10e5e35b270dd20cbe96da4f19ec3e176" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SynchronisationBarrier::signIn</definition>
+        <argsstring>()</argsstring>
+        <name>signIn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/SynchronisationBarrier.h" line="30" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/SynchronisationBarrier.cpp" bodystart="34" bodyend="42"/>
+        <references refid="classSynchronisationBarrier_14e00c5cd4c84c4e1cc3cbfa4f95132a1" compoundref="SynchronisationBarrier_8h" startline="34">barrier</references>
+        <references refid="classSynchronisationBarrier_167fd00d10dead71f86445ba80265e467" compoundref="SynchronisationBarrier_8h" startline="35">count</references>
+        <referencedby refid="classTask_15eedf2c701b1a4e797ef6dfd178ff8f2" compoundref="Task_8cpp" startline="56" endline="65">Task::setSynchronisationBarrier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classSynchronisationBarrier_11d86d60167d0022b90fbb85c73f6ed42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SynchronisationBarrier::signOut</definition>
+        <argsstring>()</argsstring>
+        <name>signOut</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/SynchronisationBarrier.h" line="31" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/SynchronisationBarrier.cpp" bodystart="44" bodyend="59"/>
+        <references refid="classSynchronisationBarrier_14e00c5cd4c84c4e1cc3cbfa4f95132a1" compoundref="SynchronisationBarrier_8h" startline="34">barrier</references>
+        <references refid="classSynchronisationBarrier_167fd00d10dead71f86445ba80265e467" compoundref="SynchronisationBarrier_8h" startline="35">count</references>
+        <referencedby refid="classTask_15eedf2c701b1a4e797ef6dfd178ff8f2" compoundref="Task_8cpp" startline="56" endline="65">Task::setSynchronisationBarrier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classSynchronisationBarrier_1194738032a7876605b60216b86b077f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SynchronisationBarrier::stepDone</definition>
+        <argsstring>()</argsstring>
+        <name>stepDone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/SynchronisationBarrier.h" line="32" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/SynchronisationBarrier.cpp" bodystart="29" bodyend="32"/>
+        <references refid="classSynchronisationBarrier_14e00c5cd4c84c4e1cc3cbfa4f95132a1" compoundref="SynchronisationBarrier_8h" startline="34">barrier</references>
+        <referencedby refid="classTask_10c57c76ff62ca6333e62158861883cbe" compoundref="Task_8cpp" startline="41" endline="49">Task::mainLoop</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mononofu/Programmieren/TaskEngine/src/SynchronisationBarrier.h" line="27" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/SynchronisationBarrier.h" bodystart="26" bodyend="36"/>
+    <listofallmembers>
+      <member refid="classSynchronisationBarrier_14e00c5cd4c84c4e1cc3cbfa4f95132a1" prot="private" virt="non-virtual"><scope>SynchronisationBarrier</scope><name>barrier</name></member>
+      <member refid="classSynchronisationBarrier_167fd00d10dead71f86445ba80265e467" prot="private" virt="non-virtual"><scope>SynchronisationBarrier</scope><name>count</name></member>
+      <member refid="classSynchronisationBarrier_10e5e35b270dd20cbe96da4f19ec3e176" prot="public" virt="non-virtual"><scope>SynchronisationBarrier</scope><name>signIn</name></member>
+      <member refid="classSynchronisationBarrier_11d86d60167d0022b90fbb85c73f6ed42" prot="public" virt="non-virtual"><scope>SynchronisationBarrier</scope><name>signOut</name></member>
+      <member refid="classSynchronisationBarrier_1194738032a7876605b60216b86b077f1" prot="public" virt="non-virtual"><scope>SynchronisationBarrier</scope><name>stepDone</name></member>
+      <member refid="classSynchronisationBarrier_11ce996a82154d365f9b2f0b47599cf15" prot="public" virt="non-virtual"><scope>SynchronisationBarrier</scope><name>SynchronisationBarrier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

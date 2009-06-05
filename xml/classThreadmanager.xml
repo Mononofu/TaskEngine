@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classThreadmanager" kind="class" prot="public">
+    <compoundname>Threadmanager</compoundname>
+    <basecompoundref refid="classTask" prot="public" virt="non-virtual">Task</basecompoundref>
+    <includes refid="Threadmanager_8h" local="no">Threadmanager.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classThreadmanager_1650104a2aa86d2f0326cadce4f0e4e2e" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classTask" kindref="compound">Task</ref> * &gt;</type>
+        <definition>std::vector&lt;Task *&gt; Threadmanager::myTasks</definition>
+        <argsstring></argsstring>
+        <name>myTasks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/Threadmanager.h" line="44" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/Threadmanager.h" bodystart="44" bodyend="-1"/>
+        <referencedby refid="classThreadmanager_123c7c589d500161cc0fa47c6d88d86ac" compoundref="Threadmanager_8cpp" startline="29" endline="45">doStep</referencedby>
+        <referencedby refid="classThreadmanager_184cdd48efc05526b018baa188f0ffd8f" compoundref="Threadmanager_8cpp" startline="87" endline="90">registerTask</referencedby>
+        <referencedby refid="classThreadmanager_12eba7621de91a4fd65f9351883b8a6df" compoundref="Threadmanager_8cpp" startline="47" endline="68">willStartThreadOnMe</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classThreadmanager_1f679dee00cff40dd038b46039eb66f56" prot="private" static="no" mutable="no">
+        <type>boost::thread_group</type>
+        <definition>boost::thread_group Threadmanager::myThreads</definition>
+        <argsstring></argsstring>
+        <name>myThreads</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/Threadmanager.h" line="45" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/Threadmanager.h" bodystart="45" bodyend="-1"/>
+        <referencedby refid="classThreadmanager_1d5d761af3ed38a3dfe9c4400a4445fbc" compoundref="Threadmanager_8cpp" startline="70" endline="80">waitForThreadsToFinish</referencedby>
+        <referencedby refid="classThreadmanager_12eba7621de91a4fd65f9351883b8a6df" compoundref="Threadmanager_8cpp" startline="47" endline="68">willStartThreadOnMe</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classThreadmanager_12ab4d9a3c4a8066245a2bb7734939548" prot="private" static="no" mutable="no">
+        <type><ref refid="Threadmanager_8h_19d3dfacc03e506818179646b542c33e2" kindref="member">ThreadingMode</ref></type>
+        <definition>ThreadingMode Threadmanager::threadingMode</definition>
+        <argsstring></argsstring>
+        <name>threadingMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/Threadmanager.h" line="46" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/Threadmanager.h" bodystart="46" bodyend="-1"/>
+        <referencedby refid="classThreadmanager_18d4d1b71a3ae70cbb6b6d6bede4bd053" compoundref="Threadmanager_8cpp" startline="82" endline="85">setThreadingMode</referencedby>
+        <referencedby refid="classThreadmanager_1d5d761af3ed38a3dfe9c4400a4445fbc" compoundref="Threadmanager_8cpp" startline="70" endline="80">waitForThreadsToFinish</referencedby>
+        <referencedby refid="classThreadmanager_12eba7621de91a4fd65f9351883b8a6df" compoundref="Threadmanager_8cpp" startline="47" endline="68">willStartThreadOnMe</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classThreadmanager_1da6ebfa8a39dae63ad6c6bedc979e303" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Threadmanager::Threadmanager</definition>
+        <argsstring>()</argsstring>
+        <name>Threadmanager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/Threadmanager.h" line="36" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/Threadmanager.cpp" bodystart="25" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classThreadmanager_184cdd48efc05526b018baa188f0ffd8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Threadmanager::registerTask</definition>
+        <argsstring>(Task *myTask)</argsstring>
+        <name>registerTask</name>
+        <param>
+          <type><ref refid="classTask" kindref="compound">Task</ref> *</type>
+          <declname>myTask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/Threadmanager.h" line="37" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/Threadmanager.cpp" bodystart="87" bodyend="90"/>
+        <references refid="classThreadmanager_1650104a2aa86d2f0326cadce4f0e4e2e" compoundref="Threadmanager_8h" startline="44">myTasks</references>
+        <referencedby refid="classFoo_1845f0eabe78a817079e1224e3227f748" compoundref="taskenginetest_8cpp" startline="88" endline="116">Foo::doSomething</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classThreadmanager_18d4d1b71a3ae70cbb6b6d6bede4bd053" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Threadmanager::setThreadingMode</definition>
+        <argsstring>(ThreadingMode mode)</argsstring>
+        <name>setThreadingMode</name>
+        <param>
+          <type><ref refid="Threadmanager_8h_19d3dfacc03e506818179646b542c33e2" kindref="member">ThreadingMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/Threadmanager.h" line="38" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/Threadmanager.cpp" bodystart="82" bodyend="85"/>
+        <references refid="classThreadmanager_12ab4d9a3c4a8066245a2bb7734939548" compoundref="Threadmanager_8h" startline="46">threadingMode</references>
+        <referencedby refid="classFoo_1845f0eabe78a817079e1224e3227f748" compoundref="taskenginetest_8cpp" startline="88" endline="116">Foo::doSomething</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classThreadmanager_1d5d761af3ed38a3dfe9c4400a4445fbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Threadmanager::waitForThreadsToFinish</definition>
+        <argsstring>()</argsstring>
+        <name>waitForThreadsToFinish</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/Threadmanager.h" line="39" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/Threadmanager.cpp" bodystart="70" bodyend="80"/>
+        <references refid="classThreadmanager_1f679dee00cff40dd038b46039eb66f56" compoundref="Threadmanager_8h" startline="45">myThreads</references>
+        <references refid="classTask_139d5bf06f3cd6eaa35af62b381c297b7" compoundref="Task_8h" startline="44">Task::thisThread</references>
+        <references refid="Threadmanager_8h_19d3dfacc03e506818179646b542c33e26b2802c24ddb995aee705b4809d79bf0" compoundref="Threadmanager_8h" startline="27">THREADING_SEQUENCIAL</references>
+        <references refid="classThreadmanager_12ab4d9a3c4a8066245a2bb7734939548" compoundref="Threadmanager_8h" startline="46">threadingMode</references>
+        <referencedby refid="classFoo_1845f0eabe78a817079e1224e3227f748" compoundref="taskenginetest_8cpp" startline="88" endline="116">Foo::doSomething</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classThreadmanager_123c7c589d500161cc0fa47c6d88d86ac" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Threadmanager::doStep</definition>
+        <argsstring>()</argsstring>
+        <name>doStep</name>
+        <reimplements refid="classTask_13d4b421d5f855c51770451f4a25cf1e8">doStep</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/Threadmanager.h" line="41" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/Threadmanager.cpp" bodystart="29" bodyend="45"/>
+        <references refid="classThreadmanager_1650104a2aa86d2f0326cadce4f0e4e2e" compoundref="Threadmanager_8h" startline="44">myTasks</references>
+      </memberdef>
+      <memberdef kind="function" id="classThreadmanager_12eba7621de91a4fd65f9351883b8a6df" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Threadmanager::willStartThreadOnMe</definition>
+        <argsstring>()</argsstring>
+        <name>willStartThreadOnMe</name>
+        <reimplements refid="classTask_1b9e4f3d7fc97a09099bbab53735cf4c7">willStartThreadOnMe</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/Threadmanager.h" line="42" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/Threadmanager.cpp" bodystart="47" bodyend="68"/>
+        <references refid="classTask_17f54395bf9598197ba2c224ac89699dc" compoundref="Task_8h" startline="46">Task::barrier</references>
+        <references refid="classThreadmanager_1650104a2aa86d2f0326cadce4f0e4e2e" compoundref="Threadmanager_8h" startline="44">myTasks</references>
+        <references refid="classThreadmanager_1f679dee00cff40dd038b46039eb66f56" compoundref="Threadmanager_8h" startline="45">myThreads</references>
+        <references refid="Threadmanager_8h_19d3dfacc03e506818179646b542c33e241268899b287c223842ec09900ad9ee1" compoundref="Threadmanager_8h" startline="29">THREADING_FREE_WHEELING</references>
+        <references refid="Threadmanager_8h_19d3dfacc03e506818179646b542c33e2c6d5431da9345aa35026b234180fb3f0" compoundref="Threadmanager_8h" startline="28">THREADING_LOCK_STEP</references>
+        <references refid="classThreadmanager_12ab4d9a3c4a8066245a2bb7734939548" compoundref="Threadmanager_8h" startline="46">threadingMode</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="78">
+        <label>Task</label>
+        <link refid="classTask"/>
+      </node>
+      <node id="77">
+        <label>Threadmanager</label>
+        <link refid="classThreadmanager"/>
+        <childnode refid="78" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="81">
+        <label>SynchronisationBarrier</label>
+        <link refid="classSynchronisationBarrier"/>
+      </node>
+      <node id="80">
+        <label>Task</label>
+        <link refid="classTask"/>
+        <childnode refid="81" relation="usage">
+          <edgelabel>barrier</edgelabel>
+        </childnode>
+      </node>
+      <node id="79">
+        <label>Threadmanager</label>
+        <link refid="classThreadmanager"/>
+        <childnode refid="80" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/mononofu/Programmieren/TaskEngine/src/Threadmanager.h" line="34" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/Threadmanager.h" bodystart="33" bodyend="47"/>
+    <listofallmembers>
+      <member refid="classThreadmanager_123c7c589d500161cc0fa47c6d88d86ac" prot="protected" virt="virtual"><scope>Threadmanager</scope><name>doStep</name></member>
+      <member refid="classTask_10c57c76ff62ca6333e62158861883cbe" prot="protected" virt="non-virtual"><scope>Threadmanager</scope><name>mainLoop</name></member>
+      <member refid="classThreadmanager_1650104a2aa86d2f0326cadce4f0e4e2e" prot="private" virt="non-virtual"><scope>Threadmanager</scope><name>myTasks</name></member>
+      <member refid="classThreadmanager_1f679dee00cff40dd038b46039eb66f56" prot="private" virt="non-virtual"><scope>Threadmanager</scope><name>myThreads</name></member>
+      <member refid="classThreadmanager_184cdd48efc05526b018baa188f0ffd8f" prot="public" virt="non-virtual"><scope>Threadmanager</scope><name>registerTask</name></member>
+      <member refid="classTask_1934daf1fa163140db2909242dc27925a" prot="public" virt="non-virtual"><scope>Threadmanager</scope><name>run</name></member>
+      <member refid="classTask_14814188fd4a04ed4ad18b002f848569f" prot="protected" virt="non-virtual"><scope>Threadmanager</scope><name>running</name></member>
+      <member refid="classTask_193c2dd660089352166c5f3c1437a552f" prot="public" virt="non-virtual"><scope>Threadmanager</scope><name>setSpeedFactor</name></member>
+      <member refid="classTask_15eedf2c701b1a4e797ef6dfd178ff8f2" prot="protected" virt="non-virtual"><scope>Threadmanager</scope><name>setSynchronisationBarrier</name></member>
+      <member refid="classThreadmanager_18d4d1b71a3ae70cbb6b6d6bede4bd053" prot="public" virt="non-virtual"><scope>Threadmanager</scope><name>setThreadingMode</name></member>
+      <member refid="classTask_1ba5eb3d6c2a034aa0e319383fbec68c4" prot="public" virt="non-virtual"><scope>Threadmanager</scope><name>stop</name></member>
+      <member refid="classTask_10ca53354bdc006762a0fda68c64f7608" prot="public" virt="non-virtual"><scope>Threadmanager</scope><name>Task</name></member>
+      <member refid="classTask_139d5bf06f3cd6eaa35af62b381c297b7" prot="protected" virt="non-virtual"><scope>Threadmanager</scope><name>thisThread</name></member>
+      <member refid="classThreadmanager_12ab4d9a3c4a8066245a2bb7734939548" prot="private" virt="non-virtual"><scope>Threadmanager</scope><name>threadingMode</name></member>
+      <member refid="classThreadmanager_1da6ebfa8a39dae63ad6c6bedc979e303" prot="public" virt="non-virtual"><scope>Threadmanager</scope><name>Threadmanager</name></member>
+      <member refid="classTask_1f3418a701f39caa26c06ff78f70c4f55" prot="public" virt="non-virtual" ambiguityscope="Task::"><scope>Threadmanager</scope><name>Threadmanager</name></member>
+      <member refid="classTask_1e1f9f9e7cb5f2e26e159b0bd612312bc" prot="protected" virt="virtual"><scope>Threadmanager</scope><name>threadWillStart</name></member>
+      <member refid="classTask_1b5f3345402ec08681fba06a051a235be" prot="protected" virt="virtual"><scope>Threadmanager</scope><name>threadWillStop</name></member>
+      <member refid="classThreadmanager_1d5d761af3ed38a3dfe9c4400a4445fbc" prot="public" virt="non-virtual"><scope>Threadmanager</scope><name>waitForThreadsToFinish</name></member>
+      <member refid="classThreadmanager_12eba7621de91a4fd65f9351883b8a6df" prot="protected" virt="virtual"><scope>Threadmanager</scope><name>willStartThreadOnMe</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

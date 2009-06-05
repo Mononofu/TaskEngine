@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classDataIdentifier" kind="class" prot="public">
+    <compoundname>DataIdentifier</compoundname>
+    <includes refid="DataIdentifier_8h" local="no">DataIdentifier.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classDataIdentifier_1f2768ee7d4d84fb87d396b9dfd99eb39" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string DataIdentifier::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/DataIdentifier.h" line="37" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/DataIdentifier.h" bodystart="37" bodyend="-1"/>
+        <referencedby refid="classDataIdentifier_14cc0c6b0fe5afb0ae4bf2bb3334e2a4e" compoundref="DataIdentifier_8cpp" startline="23" endline="26">humanReadable</referencedby>
+        <referencedby refid="DataIdentifier_8cpp_12d6bbfe2a41c09e9c5c4b13f2da821cf" compoundref="DataIdentifier_8cpp" startline="41" endline="44">operator==</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classDataIdentifier_133fc04651d72c829bb0a26287d410812" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>DataIdentifier::DataIdentifier</definition>
+        <argsstring>()</argsstring>
+        <name>DataIdentifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/DataIdentifier.h" line="29" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/DataIdentifier.h" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classDataIdentifier_1dc98e8bcb05ab5fe42423e4c8f8da5e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>DataIdentifier::DataIdentifier</definition>
+        <argsstring>(std::string stringId)</argsstring>
+        <name>DataIdentifier</name>
+        <param>
+          <type>std::string</type>
+          <declname>stringId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/DataIdentifier.h" line="30" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/DataIdentifier.h" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classDataIdentifier_10bb136105b78d00373c9459ec836b9d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>DataIdentifier::DataIdentifier</definition>
+        <argsstring>(const char *stringId)</argsstring>
+        <name>DataIdentifier</name>
+        <param>
+          <type>const char *</type>
+          <declname>stringId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/DataIdentifier.h" line="31" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/DataIdentifier.h" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classDataIdentifier_19a11b95f49e92a453e0a83f59bdab239" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DataIdentifier::isPartOf</definition>
+        <argsstring>(DataIdentifier id) const </argsstring>
+        <name>isPartOf</name>
+        <param>
+          <type><ref refid="classDataIdentifier" kindref="compound">DataIdentifier</ref></type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/DataIdentifier.h" line="32" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/DataIdentifier.cpp" bodystart="28" bodyend="39"/>
+        <references refid="classDataIdentifier_14cc0c6b0fe5afb0ae4bf2bb3334e2a4e" compoundref="DataIdentifier_8cpp" startline="23" endline="26">humanReadable</references>
+      </memberdef>
+      <memberdef kind="function" id="classDataIdentifier_14cc0c6b0fe5afb0ae4bf2bb3334e2a4e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string DataIdentifier::humanReadable</definition>
+        <argsstring>() const </argsstring>
+        <name>humanReadable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/DataIdentifier.h" line="33" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/DataIdentifier.cpp" bodystart="23" bodyend="26"/>
+        <references refid="classDataIdentifier_1f2768ee7d4d84fb87d396b9dfd99eb39" compoundref="DataIdentifier_8h" startline="37">id</references>
+        <referencedby refid="classDataIdentifier_19a11b95f49e92a453e0a83f59bdab239" compoundref="DataIdentifier_8cpp" startline="28" endline="39">isPartOf</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classDataIdentifier_12d6bbfe2a41c09e9c5c4b13f2da821cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend bool</type>
+        <definition>bool operator==</definition>
+        <argsstring>(const char *lhs, const DataIdentifier &amp;rhs)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const char *</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classDataIdentifier" kindref="compound">DataIdentifier</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/DataIdentifier.h" line="34" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/DataIdentifier.cpp" bodystart="41" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="friend" id="classDataIdentifier_1db2e0991ff762c39c35facaaa4412216" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend bool</type>
+        <definition>bool operator==</definition>
+        <argsstring>(const DataIdentifier &amp;lhs, const char *rhs)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classDataIdentifier" kindref="compound">DataIdentifier</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/DataIdentifier.h" line="35" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/DataIdentifier.cpp" bodystart="46" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mononofu/Programmieren/TaskEngine/src/DataIdentifier.h" line="27" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/DataIdentifier.h" bodystart="26" bodyend="38"/>
+    <listofallmembers>
+      <member refid="classDataIdentifier_133fc04651d72c829bb0a26287d410812" prot="public" virt="non-virtual"><scope>DataIdentifier</scope><name>DataIdentifier</name></member>
+      <member refid="classDataIdentifier_1dc98e8bcb05ab5fe42423e4c8f8da5e3" prot="public" virt="non-virtual"><scope>DataIdentifier</scope><name>DataIdentifier</name></member>
+      <member refid="classDataIdentifier_10bb136105b78d00373c9459ec836b9d8" prot="public" virt="non-virtual"><scope>DataIdentifier</scope><name>DataIdentifier</name></member>
+      <member refid="classDataIdentifier_14cc0c6b0fe5afb0ae4bf2bb3334e2a4e" prot="public" virt="non-virtual"><scope>DataIdentifier</scope><name>humanReadable</name></member>
+      <member refid="classDataIdentifier_1f2768ee7d4d84fb87d396b9dfd99eb39" prot="private" virt="non-virtual"><scope>DataIdentifier</scope><name>id</name></member>
+      <member refid="classDataIdentifier_19a11b95f49e92a453e0a83f59bdab239" prot="public" virt="non-virtual"><scope>DataIdentifier</scope><name>isPartOf</name></member>
+      <member refid="classDataIdentifier_12d6bbfe2a41c09e9c5c4b13f2da821cf" prot="public" virt="non-virtual"><scope>DataIdentifier</scope><name>operator==</name></member>
+      <member refid="classDataIdentifier_1db2e0991ff762c39c35facaaa4412216" prot="public" virt="non-virtual"><scope>DataIdentifier</scope><name>operator==</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

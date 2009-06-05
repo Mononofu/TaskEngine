@@ -1,0 +1,281 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classInformationManager" kind="class" prot="public">
+    <compoundname>InformationManager</compoundname>
+    <includes refid="InformationManager_8h" local="no">InformationManager.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classInformationManager_195b4343efd5c8bb769ddeaa8d3040f37" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Destroyer&lt; InformationManager &gt;</definition>
+        <argsstring></argsstring>
+        <name>Destroyer&lt; InformationManager &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/InformationManager.h" line="56" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/InformationManager.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classInformationManager_1761a2343176a557e7f49e59dcc43b013" prot="private" static="yes" mutable="no">
+        <type><ref refid="classInformationManager" kindref="compound">InformationManager</ref> *</type>
+        <definition>InformationManager * InformationManager::instance</definition>
+        <argsstring></argsstring>
+        <name>instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/InformationManager.h" line="58" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/InformationManager.h" bodystart="58" bodyend="-1"/>
+        <referencedby refid="classInformationManager_1f8c2f2bbacaf72b49bed72b5b0cf8225" compoundref="InformationManager_8cpp" startline="28" endline="36">Instance</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classInformationManager_10fa8f4fd30a5d8d8288ecf03b314a435" prot="private" static="yes" mutable="no">
+        <type><ref refid="classDestroyer" kindref="compound">Destroyer</ref>&lt; <ref refid="classInformationManager" kindref="compound">InformationManager</ref> &gt;</type>
+        <definition>Destroyer&lt; InformationManager &gt; InformationManager::myDestroyer</definition>
+        <argsstring></argsstring>
+        <name>myDestroyer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/InformationManager.h" line="59" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/InformationManager.h" bodystart="59" bodyend="-1"/>
+        <referencedby refid="classInformationManager_1f8c2f2bbacaf72b49bed72b5b0cf8225" compoundref="InformationManager_8cpp" startline="28" endline="36">Instance</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classInformationManager_1f2fad67b70ff6bc6cf5fd1b425394bfc" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, <ref refid="classDataProvider" kindref="compound">DataProvider</ref> * &gt;</type>
+        <definition>std::map&lt;std::string, DataProvider *&gt; InformationManager::offeredData</definition>
+        <argsstring></argsstring>
+        <name>offeredData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/InformationManager.h" line="61" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/InformationManager.h" bodystart="61" bodyend="-1"/>
+        <referencedby refid="classInformationManager_1efc9a4ab1ccfcf8519a90d99985d3ba6" compoundref="InformationManager_8cpp" startline="38" endline="41">offerData</referencedby>
+        <referencedby refid="classInformationManager_173a67ade9880878f70d2acae368af900" compoundref="InformationManager_8cpp" startline="43" endline="58">requestData</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classInformationManager_169a72509ec6606b85fd850ea9b6b3ac7" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, std::vector&lt; <ref refid="classFeedSubscriber" kindref="compound">FeedSubscriber</ref> * &gt; &gt;</type>
+        <definition>std::map&lt;std::string, std::vector&lt;FeedSubscriber*&gt; &gt; InformationManager::subscribers</definition>
+        <argsstring></argsstring>
+        <name>subscribers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/InformationManager.h" line="62" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/InformationManager.h" bodystart="62" bodyend="-1"/>
+        <referencedby refid="classInformationManager_1a526442bedb26d508648e7e15aa9a5a4" compoundref="InformationManager_8cpp" startline="60" endline="69">postDataToFeed</referencedby>
+        <referencedby refid="classInformationManager_1edfe1021c3803f5521eedf3d1a033001" compoundref="InformationManager_8cpp" startline="71" endline="74">subscribeToFeed</referencedby>
+        <referencedby refid="classInformationManager_1f7e6c00a46aee913be86b0db0e66528a" compoundref="InformationManager_8cpp" startline="76" endline="86">unsubscribeFromFeed</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classInformationManager_173a67ade9880878f70d2acae368af900" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structDataContainer" kindref="compound">DataContainer</ref></type>
+        <definition>DataContainer InformationManager::requestData</definition>
+        <argsstring>(const DataIdentifier &amp;id, int tries=1)</argsstring>
+        <name>requestData</name>
+        <param>
+          <type>const <ref refid="classDataIdentifier" kindref="compound">DataIdentifier</ref> &amp;</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tries</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/InformationManager.h" line="43" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/InformationManager.cpp" bodystart="43" bodyend="58"/>
+        <references refid="debug_8h_13e3c70251bcc0d8ada795cb86e74142a" compoundref="debug_8h" startline="84">Dout</references>
+        <references refid="classInformationManager_1f2fad67b70ff6bc6cf5fd1b425394bfc" compoundref="InformationManager_8h" startline="61">offeredData</references>
+        <referencedby refid="classFoo_1845f0eabe78a817079e1224e3227f748" compoundref="taskenginetest_8cpp" startline="88" endline="116">Foo::doSomething</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classInformationManager_1efc9a4ab1ccfcf8519a90d99985d3ba6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void InformationManager::offerData</definition>
+        <argsstring>(DataIdentifier id, DataProvider *provider)</argsstring>
+        <name>offerData</name>
+        <param>
+          <type><ref refid="classDataIdentifier" kindref="compound">DataIdentifier</ref></type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type><ref refid="classDataProvider" kindref="compound">DataProvider</ref> *</type>
+          <declname>provider</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/InformationManager.h" line="44" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/InformationManager.cpp" bodystart="38" bodyend="41"/>
+        <references refid="classInformationManager_1f2fad67b70ff6bc6cf5fd1b425394bfc" compoundref="InformationManager_8h" startline="61">offeredData</references>
+        <referencedby refid="classBar_19cae2188fcc6cce41caa7898c64548d1" compoundref="taskenginetest_8cpp" startline="53" endline="57">Bar::Bar</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classInformationManager_1a526442bedb26d508648e7e15aa9a5a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void InformationManager::postDataToFeed</definition>
+        <argsstring>(std::string feedName, DataContainer data)</argsstring>
+        <name>postDataToFeed</name>
+        <param>
+          <type>std::string</type>
+          <declname>feedName</declname>
+        </param>
+        <param>
+          <type><ref refid="structDataContainer" kindref="compound">DataContainer</ref></type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/InformationManager.h" line="47" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/InformationManager.cpp" bodystart="60" bodyend="69"/>
+        <references refid="classInformationManager_169a72509ec6606b85fd850ea9b6b3ac7" compoundref="InformationManager_8h" startline="62">subscribers</references>
+        <referencedby refid="classBaz_17c3e1f88e238ada02a582230ed0d3685" compoundref="taskenginetest_8cpp" startline="30" endline="33">Baz::threadWillStart</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classInformationManager_1edfe1021c3803f5521eedf3d1a033001" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void InformationManager::subscribeToFeed</definition>
+        <argsstring>(std::string feedName, FeedSubscriber *subscriber)</argsstring>
+        <name>subscribeToFeed</name>
+        <param>
+          <type>std::string</type>
+          <declname>feedName</declname>
+        </param>
+        <param>
+          <type><ref refid="classFeedSubscriber" kindref="compound">FeedSubscriber</ref> *</type>
+          <declname>subscriber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/InformationManager.h" line="48" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/InformationManager.cpp" bodystart="71" bodyend="74"/>
+        <references refid="classInformationManager_169a72509ec6606b85fd850ea9b6b3ac7" compoundref="InformationManager_8h" startline="62">subscribers</references>
+        <referencedby refid="classFoo_1845f0eabe78a817079e1224e3227f748" compoundref="taskenginetest_8cpp" startline="88" endline="116">Foo::doSomething</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classInformationManager_1f7e6c00a46aee913be86b0db0e66528a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void InformationManager::unsubscribeFromFeed</definition>
+        <argsstring>(std::string feedName, FeedSubscriber *subscriber)</argsstring>
+        <name>unsubscribeFromFeed</name>
+        <param>
+          <type>std::string</type>
+          <declname>feedName</declname>
+        </param>
+        <param>
+          <type><ref refid="classFeedSubscriber" kindref="compound">FeedSubscriber</ref> *</type>
+          <declname>subscriber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/InformationManager.h" line="49" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/InformationManager.cpp" bodystart="76" bodyend="86"/>
+        <references refid="classInformationManager_169a72509ec6606b85fd850ea9b6b3ac7" compoundref="InformationManager_8h" startline="62">subscribers</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classInformationManager_1f8c2f2bbacaf72b49bed72b5b0cf8225" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classInformationManager" kindref="compound">InformationManager</ref> *</type>
+        <definition>InformationManager * InformationManager::Instance</definition>
+        <argsstring>()</argsstring>
+        <name>Instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/InformationManager.h" line="52" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/InformationManager.cpp" bodystart="28" bodyend="36"/>
+        <references refid="classInformationManager_1761a2343176a557e7f49e59dcc43b013" compoundref="InformationManager_8h" startline="58">instance</references>
+        <references refid="classInformationManager_10fa8f4fd30a5d8d8288ecf03b314a435" compoundref="InformationManager_8h" startline="59">myDestroyer</references>
+        <references refid="classDestroyer_14d605e2386ed1a59ce0aa1ca28fd78bd" compoundref="Destroyer_8h" startline="52" endline="55">Destroyer&lt; DOOMED &gt;::SetDoomed</references>
+        <referencedby refid="classBar_19cae2188fcc6cce41caa7898c64548d1" compoundref="taskenginetest_8cpp" startline="53" endline="57">Bar::Bar</referencedby>
+        <referencedby refid="classFoo_1845f0eabe78a817079e1224e3227f748" compoundref="taskenginetest_8cpp" startline="88" endline="116">Foo::doSomething</referencedby>
+        <referencedby refid="classBaz_17c3e1f88e238ada02a582230ed0d3685" compoundref="taskenginetest_8cpp" startline="30" endline="33">Baz::threadWillStart</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classInformationManager_1a7fa261937567cd4d105fd366c25d5f8" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>InformationManager::InformationManager</definition>
+        <argsstring>()</argsstring>
+        <name>InformationManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/InformationManager.h" line="54" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/InformationManager.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classInformationManager_15bfae9a1583d13565bbc3d30e593b4da" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual InformationManager::~InformationManager</definition>
+        <argsstring>()</argsstring>
+        <name>~InformationManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/InformationManager.h" line="55" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/InformationManager.h" bodystart="55" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classInformationManager" kindref="compound">InformationManager</ref> singleton, responsible for passing around data. </para>    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="classInformationManager" kindref="compound">InformationManager</ref> is basically just a single point to pass data with, so different classes don&apos;t need to know about each other </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="69">
+        <label>InformationManager</label>
+        <link refid="classInformationManager"/>
+        <childnode refid="69" relation="usage">
+          <edgelabel>instance</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/mononofu/Programmieren/TaskEngine/src/InformationManager.h" line="40" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/InformationManager.h" bodystart="39" bodyend="63"/>
+    <listofallmembers>
+      <member refid="classInformationManager_195b4343efd5c8bb769ddeaa8d3040f37" prot="protected" virt="non-virtual"><scope>InformationManager</scope><name>Destroyer&lt; InformationManager &gt;</name></member>
+      <member refid="classInformationManager_1a7fa261937567cd4d105fd366c25d5f8" prot="protected" virt="non-virtual"><scope>InformationManager</scope><name>InformationManager</name></member>
+      <member refid="classInformationManager_1761a2343176a557e7f49e59dcc43b013" prot="private" virt="non-virtual"><scope>InformationManager</scope><name>instance</name></member>
+      <member refid="classInformationManager_1f8c2f2bbacaf72b49bed72b5b0cf8225" prot="public" virt="non-virtual"><scope>InformationManager</scope><name>Instance</name></member>
+      <member refid="classInformationManager_10fa8f4fd30a5d8d8288ecf03b314a435" prot="private" virt="non-virtual"><scope>InformationManager</scope><name>myDestroyer</name></member>
+      <member refid="classInformationManager_1efc9a4ab1ccfcf8519a90d99985d3ba6" prot="public" virt="non-virtual"><scope>InformationManager</scope><name>offerData</name></member>
+      <member refid="classInformationManager_1f2fad67b70ff6bc6cf5fd1b425394bfc" prot="private" virt="non-virtual"><scope>InformationManager</scope><name>offeredData</name></member>
+      <member refid="classInformationManager_1a526442bedb26d508648e7e15aa9a5a4" prot="public" virt="non-virtual"><scope>InformationManager</scope><name>postDataToFeed</name></member>
+      <member refid="classInformationManager_173a67ade9880878f70d2acae368af900" prot="public" virt="non-virtual"><scope>InformationManager</scope><name>requestData</name></member>
+      <member refid="classInformationManager_169a72509ec6606b85fd850ea9b6b3ac7" prot="private" virt="non-virtual"><scope>InformationManager</scope><name>subscribers</name></member>
+      <member refid="classInformationManager_1edfe1021c3803f5521eedf3d1a033001" prot="public" virt="non-virtual"><scope>InformationManager</scope><name>subscribeToFeed</name></member>
+      <member refid="classInformationManager_1f7e6c00a46aee913be86b0db0e66528a" prot="public" virt="non-virtual"><scope>InformationManager</scope><name>unsubscribeFromFeed</name></member>
+      <member refid="classInformationManager_15bfae9a1583d13565bbc3d30e593b4da" prot="protected" virt="virtual"><scope>InformationManager</scope><name>~InformationManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

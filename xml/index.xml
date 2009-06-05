@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.5.6">
+  <compound refid="classBar" kind="class"><name>Bar</name>
+    <member refid="classBar_19cae2188fcc6cce41caa7898c64548d1" kind="function"><name>Bar</name></member>
+    <member refid="classBar_12d285596b5a4ab73bbb903bc8a3c9ffc" kind="function"><name>getData</name></member>
+  </compound>
+  <compound refid="classBaz" kind="class"><name>Baz</name>
+    <member refid="classBaz_19850a702d4cda997589737cc7b60d37c" kind="variable"><name>sleepTime</name></member>
+    <member refid="classBaz_16c43c5174ae6045efc515ea9d7286284" kind="variable"><name>log</name></member>
+    <member refid="classBaz_14dc884483d03246854174cdfbcfc47e3" kind="variable"><name>steps</name></member>
+    <member refid="classBaz_18ad601dcddeec5999ec0a98de346a41c" kind="function"><name>Baz</name></member>
+    <member refid="classBaz_12b1607ab4b3771bfb4c2763eee9ecfd8" kind="function"><name>doStep</name></member>
+    <member refid="classBaz_17c3e1f88e238ada02a582230ed0d3685" kind="function"><name>threadWillStart</name></member>
+  </compound>
+  <compound refid="structDataContainer" kind="struct"><name>DataContainer</name>
+    <member refid="structDataContainer_135f6e0192771194e01526a8ab8fdf42b" kind="variable"><name>id</name></member>
+    <member refid="structDataContainer_1febb3fde8b4ae1fa777b0f736fb67803" kind="variable"><name>data</name></member>
+    <member refid="structDataContainer_176e1e60d717a64b7f742699f67c76276" kind="function"><name>DataContainer</name></member>
+    <member refid="structDataContainer_1abe61a8f3196df2bf8fb4f5ea81dbbd7" kind="function"><name>DataContainer</name></member>
+  </compound>
+  <compound refid="classDataIdentifier" kind="class"><name>DataIdentifier</name>
+    <member refid="classDataIdentifier_1f2768ee7d4d84fb87d396b9dfd99eb39" kind="variable"><name>id</name></member>
+    <member refid="classDataIdentifier_133fc04651d72c829bb0a26287d410812" kind="function"><name>DataIdentifier</name></member>
+    <member refid="classDataIdentifier_1dc98e8bcb05ab5fe42423e4c8f8da5e3" kind="function"><name>DataIdentifier</name></member>
+    <member refid="classDataIdentifier_10bb136105b78d00373c9459ec836b9d8" kind="function"><name>DataIdentifier</name></member>
+    <member refid="classDataIdentifier_19a11b95f49e92a453e0a83f59bdab239" kind="function"><name>isPartOf</name></member>
+    <member refid="classDataIdentifier_14cc0c6b0fe5afb0ae4bf2bb3334e2a4e" kind="function"><name>humanReadable</name></member>
+    <member refid="classDataIdentifier_12d6bbfe2a41c09e9c5c4b13f2da821cf" kind="friend"><name>operator==</name></member>
+    <member refid="classDataIdentifier_1db2e0991ff762c39c35facaaa4412216" kind="friend"><name>operator==</name></member>
+  </compound>
+  <compound refid="classDataProvider" kind="class"><name>DataProvider</name>
+    <member refid="classDataProvider_18b866e7ab680b8b06cf2ca7ebc7dd94e" kind="friend"><name>InformationManager</name></member>
+    <member refid="classDataProvider_1bb3b401695b8a7b61477f5b1f17e92a7" kind="function"><name>getData</name></member>
+  </compound>
+  <compound refid="classDestroyer" kind="class"><name>Destroyer</name>
+    <member refid="classDestroyer_14b7dccb9dfee34f6677d38b15e89c3b0" kind="variable"><name>_doomed</name></member>
+    <member refid="classDestroyer_1533dbd85ce12598c700ca5330148985e" kind="function"><name>Destroyer</name></member>
+    <member refid="classDestroyer_19c6346348e2073224de3738314a77ebe" kind="function"><name>~Destroyer</name></member>
+    <member refid="classDestroyer_14d605e2386ed1a59ce0aa1ca28fd78bd" kind="function"><name>SetDoomed</name></member>
+    <member refid="classDestroyer_1fca7b3c4e9e833602dff10a241a82954" kind="function"><name>Destroyer</name></member>
+    <member refid="classDestroyer_1448a87dc2bcf2fab4cf121d6a41f6102" kind="function"><name>operator=</name></member>
+  </compound>
+  <compound refid="classFeedSubscriber" kind="class"><name>FeedSubscriber</name>
+    <member refid="classFeedSubscriber_18b866e7ab680b8b06cf2ca7ebc7dd94e" kind="friend"><name>InformationManager</name></member>
+    <member refid="classFeedSubscriber_10446a562cef5bbb5562ba057f72065ab" kind="function"><name>receiveData</name></member>
+  </compound>
+  <compound refid="classFoo" kind="class"><name>Foo</name>
+    <member refid="classFoo_15c036d1b3561a0e1beffe8c6799a4276" kind="function"><name>Foo</name></member>
+    <member refid="classFoo_1845f0eabe78a817079e1224e3227f748" kind="function"><name>doSomething</name></member>
+    <member refid="classFoo_14c5b4fa3f309ca3a850a3c43436a2dbc" kind="function"><name>receiveData</name></member>
+  </compound>
+  <compound refid="classInformationManager" kind="class"><name>InformationManager</name>
+    <member refid="classInformationManager_195b4343efd5c8bb769ddeaa8d3040f37" kind="friend"><name>Destroyer&lt; InformationManager &gt;</name></member>
+    <member refid="classInformationManager_1761a2343176a557e7f49e59dcc43b013" kind="variable"><name>instance</name></member>
+    <member refid="classInformationManager_10fa8f4fd30a5d8d8288ecf03b314a435" kind="variable"><name>myDestroyer</name></member>
+    <member refid="classInformationManager_1f2fad67b70ff6bc6cf5fd1b425394bfc" kind="variable"><name>offeredData</name></member>
+    <member refid="classInformationManager_169a72509ec6606b85fd850ea9b6b3ac7" kind="variable"><name>subscribers</name></member>
+    <member refid="classInformationManager_173a67ade9880878f70d2acae368af900" kind="function"><name>requestData</name></member>
+    <member refid="classInformationManager_1efc9a4ab1ccfcf8519a90d99985d3ba6" kind="function"><name>offerData</name></member>
+    <member refid="classInformationManager_1a526442bedb26d508648e7e15aa9a5a4" kind="function"><name>postDataToFeed</name></member>
+    <member refid="classInformationManager_1edfe1021c3803f5521eedf3d1a033001" kind="function"><name>subscribeToFeed</name></member>
+    <member refid="classInformationManager_1f7e6c00a46aee913be86b0db0e66528a" kind="function"><name>unsubscribeFromFeed</name></member>
+    <member refid="classInformationManager_1f8c2f2bbacaf72b49bed72b5b0cf8225" kind="function"><name>Instance</name></member>
+    <member refid="classInformationManager_1a7fa261937567cd4d105fd366c25d5f8" kind="function"><name>InformationManager</name></member>
+    <member refid="classInformationManager_15bfae9a1583d13565bbc3d30e593b4da" kind="function"><name>~InformationManager</name></member>
+  </compound>
+  <compound refid="classSynchronisationBarrier" kind="class"><name>SynchronisationBarrier</name>
+    <member refid="classSynchronisationBarrier_14e00c5cd4c84c4e1cc3cbfa4f95132a1" kind="variable"><name>barrier</name></member>
+    <member refid="classSynchronisationBarrier_167fd00d10dead71f86445ba80265e467" kind="variable"><name>count</name></member>
+    <member refid="classSynchronisationBarrier_11ce996a82154d365f9b2f0b47599cf15" kind="function"><name>SynchronisationBarrier</name></member>
+    <member refid="classSynchronisationBarrier_10e5e35b270dd20cbe96da4f19ec3e176" kind="function"><name>signIn</name></member>
+    <member refid="classSynchronisationBarrier_11d86d60167d0022b90fbb85c73f6ed42" kind="function"><name>signOut</name></member>
+    <member refid="classSynchronisationBarrier_1194738032a7876605b60216b86b077f1" kind="function"><name>stepDone</name></member>
+  </compound>
+  <compound refid="classTask" kind="class"><name>Task</name>
+    <member refid="classTask_1f3418a701f39caa26c06ff78f70c4f55" kind="friend"><name>Threadmanager</name></member>
+    <member refid="classTask_14814188fd4a04ed4ad18b002f848569f" kind="variable"><name>running</name></member>
+    <member refid="classTask_139d5bf06f3cd6eaa35af62b381c297b7" kind="variable"><name>thisThread</name></member>
+    <member refid="classTask_17f54395bf9598197ba2c224ac89699dc" kind="variable"><name>barrier</name></member>
+    <member refid="classTask_1b522760063b8782725e31fbebccb6222" kind="variable"><name>speedFactor</name></member>
+    <member refid="classTask_10ca53354bdc006762a0fda68c64f7608" kind="function"><name>Task</name></member>
+    <member refid="classTask_1934daf1fa163140db2909242dc27925a" kind="function"><name>run</name></member>
+    <member refid="classTask_1ba5eb3d6c2a034aa0e319383fbec68c4" kind="function"><name>stop</name></member>
+    <member refid="classTask_193c2dd660089352166c5f3c1437a552f" kind="function"><name>setSpeedFactor</name></member>
+    <member refid="classTask_10c57c76ff62ca6333e62158861883cbe" kind="function"><name>mainLoop</name></member>
+    <member refid="classTask_13d4b421d5f855c51770451f4a25cf1e8" kind="function"><name>doStep</name></member>
+    <member refid="classTask_15eedf2c701b1a4e797ef6dfd178ff8f2" kind="function"><name>setSynchronisationBarrier</name></member>
+    <member refid="classTask_1b9e4f3d7fc97a09099bbab53735cf4c7" kind="function"><name>willStartThreadOnMe</name></member>
+    <member refid="classTask_1e1f9f9e7cb5f2e26e159b0bd612312bc" kind="function"><name>threadWillStart</name></member>
+    <member refid="classTask_1b5f3345402ec08681fba06a051a235be" kind="function"><name>threadWillStop</name></member>
+  </compound>
+  <compound refid="classThreadmanager" kind="class"><name>Threadmanager</name>
+    <member refid="classThreadmanager_1650104a2aa86d2f0326cadce4f0e4e2e" kind="variable"><name>myTasks</name></member>
+    <member refid="classThreadmanager_1f679dee00cff40dd038b46039eb66f56" kind="variable"><name>myThreads</name></member>
+    <member refid="classThreadmanager_12ab4d9a3c4a8066245a2bb7734939548" kind="variable"><name>threadingMode</name></member>
+    <member refid="classThreadmanager_1da6ebfa8a39dae63ad6c6bedc979e303" kind="function"><name>Threadmanager</name></member>
+    <member refid="classThreadmanager_184cdd48efc05526b018baa188f0ffd8f" kind="function"><name>registerTask</name></member>
+    <member refid="classThreadmanager_18d4d1b71a3ae70cbb6b6d6bede4bd053" kind="function"><name>setThreadingMode</name></member>
+    <member refid="classThreadmanager_1d5d761af3ed38a3dfe9c4400a4445fbc" kind="function"><name>waitForThreadsToFinish</name></member>
+    <member refid="classThreadmanager_123c7c589d500161cc0fa47c6d88d86ac" kind="function"><name>doStep</name></member>
+    <member refid="classThreadmanager_12eba7621de91a4fd65f9351883b8a6df" kind="function"><name>willStartThreadOnMe</name></member>
+  </compound>
+  <compound refid="CMakeFiles_2CompilerIdC_2CMakeCCompilerId_8c" kind="file"><name>CMakeCCompilerId.c</name>
+    <member refid="CMakeFiles_2CompilerIdC_2CMakeCCompilerId_8c_181dee0709ded976b2e0319239f72d174" kind="define"><name>COMPILER_ID</name></member>
+    <member refid="CMakeFiles_2CompilerIdC_2CMakeCCompilerId_8c_1dbc5372f40838899018fadbc89bd588b" kind="define"><name>PLATFORM_ID</name></member>
+    <member refid="CMakeFiles_2CompilerIdC_2CMakeCCompilerId_8c_1ab4f0400f2b990cc0cfaa596066ed23a" kind="variable"><name>info_compiler</name></member>
+    <member refid="CMakeFiles_2CompilerIdC_2CMakeCCompilerId_8c_1bfa30dab5bd89c85774e2aaaca5262d1" kind="variable"><name>info_platform</name></member>
+    <member refid="CMakeFiles_2CompilerIdC_2CMakeCCompilerId_8c_10ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="src_2CMakeFiles_2CompilerIdC_2CMakeCCompilerId_8c" kind="file"><name>CMakeCCompilerId.c</name>
+    <member refid="src_2CMakeFiles_2CompilerIdC_2CMakeCCompilerId_8c_181dee0709ded976b2e0319239f72d174" kind="define"><name>COMPILER_ID</name></member>
+    <member refid="src_2CMakeFiles_2CompilerIdC_2CMakeCCompilerId_8c_1dbc5372f40838899018fadbc89bd588b" kind="define"><name>PLATFORM_ID</name></member>
+    <member refid="src_2CMakeFiles_2CompilerIdC_2CMakeCCompilerId_8c_1ab4f0400f2b990cc0cfaa596066ed23a" kind="variable"><name>info_compiler</name></member>
+    <member refid="src_2CMakeFiles_2CompilerIdC_2CMakeCCompilerId_8c_1bfa30dab5bd89c85774e2aaaca5262d1" kind="variable"><name>info_platform</name></member>
+    <member refid="src_2CMakeFiles_2CompilerIdC_2CMakeCCompilerId_8c_10ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="CMakeFiles_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp" kind="file"><name>CMakeCXXCompilerId.cpp</name>
+    <member refid="CMakeFiles_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_181dee0709ded976b2e0319239f72d174" kind="define"><name>COMPILER_ID</name></member>
+    <member refid="CMakeFiles_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1dbc5372f40838899018fadbc89bd588b" kind="define"><name>PLATFORM_ID</name></member>
+    <member refid="CMakeFiles_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1ab4f0400f2b990cc0cfaa596066ed23a" kind="variable"><name>info_compiler</name></member>
+    <member refid="CMakeFiles_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1bfa30dab5bd89c85774e2aaaca5262d1" kind="variable"><name>info_platform</name></member>
+    <member refid="CMakeFiles_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_10ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="src_2CMakeFiles_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp" kind="file"><name>CMakeCXXCompilerId.cpp</name>
+    <member refid="src_2CMakeFiles_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_181dee0709ded976b2e0319239f72d174" kind="define"><name>COMPILER_ID</name></member>
+    <member refid="src_2CMakeFiles_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1dbc5372f40838899018fadbc89bd588b" kind="define"><name>PLATFORM_ID</name></member>
+    <member refid="src_2CMakeFiles_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1ab4f0400f2b990cc0cfaa596066ed23a" kind="variable"><name>info_compiler</name></member>
+    <member refid="src_2CMakeFiles_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_1bfa30dab5bd89c85774e2aaaca5262d1" kind="variable"><name>info_platform</name></member>
+    <member refid="src_2CMakeFiles_2CompilerIdCXX_2CMakeCXXCompilerId_8cpp_10ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="DataContainer_8cpp" kind="file"><name>DataContainer.cpp</name>
+  </compound>
+  <compound refid="DataContainer_8h" kind="file"><name>DataContainer.h</name>
+  </compound>
+  <compound refid="DataIdentifier_8cpp" kind="file"><name>DataIdentifier.cpp</name>
+    <member refid="DataIdentifier_8cpp_12d6bbfe2a41c09e9c5c4b13f2da821cf" kind="function"><name>operator==</name></member>
+    <member refid="DataIdentifier_8cpp_1db2e0991ff762c39c35facaaa4412216" kind="function"><name>operator==</name></member>
+  </compound>
+  <compound refid="DataIdentifier_8h" kind="file"><name>DataIdentifier.h</name>
+  </compound>
+  <compound refid="DataProvider_8h" kind="file"><name>DataProvider.h</name>
+  </compound>
+  <compound refid="debug_8cpp" kind="file"><name>debug.cpp</name>
+    <member refid="debug_8cpp_10b7438b525ca7565e60bcab4d2d70805" kind="function"><name>initDebug</name></member>
+  </compound>
+  <compound refid="debug_8h" kind="file"><name>debug.h</name>
+    <member refid="debug_8h_13e3c70251bcc0d8ada795cb86e74142a" kind="define"><name>Dout</name></member>
+    <member refid="debug_8h_1e2158b5a72df68048f79218872edb393" kind="define"><name>Dwar</name></member>
+    <member refid="debug_8h_1c25ef055a50dae93508175b5df08d375" kind="define"><name>Derr</name></member>
+    <member refid="debug_8h_144fe714b53f91f01aab7d314d83d723d" kind="enum"><name>severity_level</name></member>
+    <member refid="debug_8h_144fe714b53f91f01aab7d314d83d723debc81705969b8c5ae986b0b2ec08d1d5" kind="enumvalue"><name>normal</name></member>
+    <member refid="debug_8h_144fe714b53f91f01aab7d314d83d723d89dee1d3fff432a884ac8199fd6c2909" kind="enumvalue"><name>notification</name></member>
+    <member refid="debug_8h_144fe714b53f91f01aab7d314d83d723d8de9aef05fc85e519a0cfce33573f492" kind="enumvalue"><name>warning</name></member>
+    <member refid="debug_8h_144fe714b53f91f01aab7d314d83d723dd606e435413ea0944dd00d49e901e4ed" kind="enumvalue"><name>error</name></member>
+    <member refid="debug_8h_144fe714b53f91f01aab7d314d83d723d5fe0ea375791d13455a34f3d40dc9c7d" kind="enumvalue"><name>critical</name></member>
+    <member refid="debug_8h_112636725c67e44effd6b3787e86a4569" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="debug_8h_10b7438b525ca7565e60bcab4d2d70805" kind="function"><name>initDebug</name></member>
+  </compound>
+  <compound refid="Destroyer_8h" kind="file"><name>Destroyer.h</name>
+  </compound>
+  <compound refid="FeedSubscriber_8h" kind="file"><name>FeedSubscriber.h</name>
+  </compound>
+  <compound refid="InformationManager_8cpp" kind="file"><name>InformationManager.cpp</name>
+  </compound>
+  <compound refid="InformationManager_8h" kind="file"><name>InformationManager.h</name>
+    <member refid="InformationManager_8h_1d2da2456fa453053da2464fd8a76340d" kind="typedef"><name>SubscriberID</name></member>
+  </compound>
+  <compound refid="SynchronisationBarrier_8cpp" kind="file"><name>SynchronisationBarrier.cpp</name>
+  </compound>
+  <compound refid="SynchronisationBarrier_8h" kind="file"><name>SynchronisationBarrier.h</name>
+  </compound>
+  <compound refid="Task_8cpp" kind="file"><name>Task.cpp</name>
+  </compound>
+  <compound refid="Task_8h" kind="file"><name>Task.h</name>
+  </compound>
+  <compound refid="taskengine_8h" kind="file"><name>taskengine.h</name>
+  </compound>
+  <compound refid="taskenginetest_8cpp" kind="file"><name>taskenginetest.cpp</name>
+    <member refid="taskenginetest_8cpp_13c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="Threadmanager_8cpp" kind="file"><name>Threadmanager.cpp</name>
+  </compound>
+  <compound refid="Threadmanager_8h" kind="file"><name>Threadmanager.h</name>
+    <member refid="Threadmanager_8h_19d3dfacc03e506818179646b542c33e2" kind="enum"><name>ThreadingMode</name></member>
+    <member refid="Threadmanager_8h_19d3dfacc03e506818179646b542c33e26b2802c24ddb995aee705b4809d79bf0" kind="enumvalue"><name>THREADING_SEQUENCIAL</name></member>
+    <member refid="Threadmanager_8h_19d3dfacc03e506818179646b542c33e2c6d5431da9345aa35026b234180fb3f0" kind="enumvalue"><name>THREADING_LOCK_STEP</name></member>
+    <member refid="Threadmanager_8h_19d3dfacc03e506818179646b542c33e241268899b287c223842ec09900ad9ee1" kind="enumvalue"><name>THREADING_FREE_WHEELING</name></member>
+  </compound>
+  <compound refid="dir_a1754889f91e97ea87f7fe89d4096ad8" kind="dir"><name>Programmieren/TaskEngine/src/CMakeFiles/</name>
+  </compound>
+  <compound refid="dir_d8ebe8168aac1f0722d923312d1bf68a" kind="dir"><name>Programmieren/TaskEngine/CMakeFiles/</name>
+  </compound>
+  <compound refid="dir_1facf52899ba38faebaa7bb45d730c90" kind="dir"><name>Programmieren/TaskEngine/src/CMakeFiles/CompilerIdC/</name>
+  </compound>
+  <compound refid="dir_497471133b368a10cc2ceaff705306a4" kind="dir"><name>Programmieren/TaskEngine/CMakeFiles/CompilerIdC/</name>
+  </compound>
+  <compound refid="dir_20922cb1c00730e58d60d65a04a57fa0" kind="dir"><name>Programmieren/TaskEngine/src/CMakeFiles/CompilerIdCXX/</name>
+  </compound>
+  <compound refid="dir_6c530544a2e4a34123b08e4af7b48ae5" kind="dir"><name>Programmieren/TaskEngine/CMakeFiles/CompilerIdCXX/</name>
+  </compound>
+  <compound refid="dir_a949182f77df21812f867276b9be9234" kind="dir"><name>Programmieren/</name>
+  </compound>
+  <compound refid="dir_a0181396ca685d128e7f1f7c69c6e65f" kind="dir"><name>Programmieren/TaskEngine/src/</name>
+  </compound>
+  <compound refid="dir_d7d1030700e662b51f3ed6ed9a753720" kind="dir"><name>Programmieren/TaskEngine/</name>
+  </compound>
+</doxygenindex>

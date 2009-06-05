@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classBar" kind="class" prot="public">
+    <compoundname>Bar</compoundname>
+    <basecompoundref refid="classDataProvider" prot="public" virt="non-virtual">DataProvider</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classBar_19cae2188fcc6cce41caa7898c64548d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Bar::Bar</definition>
+        <argsstring>()</argsstring>
+        <name>Bar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/taskenginetest.cpp" line="54" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/taskenginetest.cpp" bodystart="53" bodyend="57"/>
+        <references refid="classInformationManager_1f8c2f2bbacaf72b49bed72b5b0cf8225" compoundref="InformationManager_8cpp" startline="28" endline="36">InformationManager::Instance</references>
+        <references refid="classInformationManager_1efc9a4ab1ccfcf8519a90d99985d3ba6" compoundref="InformationManager_8cpp" startline="38" endline="41">InformationManager::offerData</references>
+      </memberdef>
+      <memberdef kind="function" id="classBar_12d285596b5a4ab73bbb903bc8a3c9ffc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="structDataContainer" kindref="compound">DataContainer</ref></type>
+        <definition>DataContainer Bar::getData</definition>
+        <argsstring>(const DataIdentifier &amp;id)</argsstring>
+        <name>getData</name>
+        <reimplements refid="classDataProvider_1bb3b401695b8a7b61477f5b1f17e92a7">getData</reimplements>
+        <param>
+          <type>const <ref refid="classDataIdentifier" kindref="compound">DataIdentifier</ref> &amp;</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/taskenginetest.cpp" line="59" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/taskenginetest.cpp" bodystart="58" bodyend="79"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="42">
+        <label>DataProvider</label>
+        <link refid="classDataProvider"/>
+      </node>
+      <node id="41">
+        <label>Bar</label>
+        <link refid="classBar"/>
+        <childnode refid="42" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="44">
+        <label>DataProvider</label>
+        <link refid="classDataProvider"/>
+      </node>
+      <node id="43">
+        <label>Bar</label>
+        <link refid="classBar"/>
+        <childnode refid="44" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/mononofu/Programmieren/TaskEngine/src/taskenginetest.cpp" line="51" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/taskenginetest.cpp" bodystart="50" bodyend="80"/>
+    <listofallmembers>
+      <member refid="classBar_19cae2188fcc6cce41caa7898c64548d1" prot="public" virt="non-virtual"><scope>Bar</scope><name>Bar</name></member>
+      <member refid="classBar_12d285596b5a4ab73bbb903bc8a3c9ffc" prot="public" virt="virtual"><scope>Bar</scope><name>getData</name></member>
+      <member refid="classDataProvider_18b866e7ab680b8b06cf2ca7ebc7dd94e" prot="public" virt="non-virtual"><scope>Bar</scope><name>InformationManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

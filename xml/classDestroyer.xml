@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classDestroyer" kind="class" prot="public">
+    <compoundname>Destroyer</compoundname>
+    <includes refid="Destroyer_8h" local="no">Destroyer.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>DOOMED</declname>
+        <defname>DOOMED</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classDestroyer_14b7dccb9dfee34f6677d38b15e89c3b0" prot="private" static="no" mutable="no">
+        <type>DOOMED *</type>
+        <definition>DOOMED* Destroyer&lt; DOOMED &gt;::_doomed</definition>
+        <argsstring></argsstring>
+        <name>_doomed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/Destroyer.h" line="37" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/Destroyer.h" bodystart="37" bodyend="-1"/>
+        <referencedby refid="classDestroyer_14d605e2386ed1a59ce0aa1ca28fd78bd" compoundref="Destroyer_8h" startline="52" endline="55">Destroyer&lt; DOOMED &gt;::SetDoomed</referencedby>
+        <referencedby refid="classDestroyer_19c6346348e2073224de3738314a77ebe" compoundref="Destroyer_8h" startline="46" endline="49">Destroyer&lt; DOOMED &gt;::~Destroyer</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classDestroyer_1533dbd85ce12598c700ca5330148985e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Destroyer&lt; DOOMED &gt;::Destroyer</definition>
+        <argsstring>()</argsstring>
+        <name>Destroyer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/Destroyer.h" line="27" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/Destroyer.h" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classDestroyer_19c6346348e2073224de3738314a77ebe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Destroyer&lt; DOOMED &gt;::~Destroyer</definition>
+        <argsstring>()</argsstring>
+        <name>~Destroyer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/Destroyer.h" line="28" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/Destroyer.h" bodystart="46" bodyend="49"/>
+        <references refid="classDestroyer_14b7dccb9dfee34f6677d38b15e89c3b0" compoundref="Destroyer_8h" startline="37">Destroyer&lt; DOOMED &gt;::_doomed</references>
+      </memberdef>
+      <memberdef kind="function" id="classDestroyer_14d605e2386ed1a59ce0aa1ca28fd78bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Destroyer&lt; DOOMED &gt;::SetDoomed</definition>
+        <argsstring>(DOOMED *)</argsstring>
+        <name>SetDoomed</name>
+        <param>
+          <type>DOOMED *</type>
+          <defname>d</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/Destroyer.h" line="30" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/Destroyer.h" bodystart="52" bodyend="55"/>
+        <references refid="classDestroyer_14b7dccb9dfee34f6677d38b15e89c3b0" compoundref="Destroyer_8h" startline="37">Destroyer&lt; DOOMED &gt;::_doomed</references>
+        <referencedby refid="classInformationManager_1f8c2f2bbacaf72b49bed72b5b0cf8225" compoundref="InformationManager_8cpp" startline="28" endline="36">InformationManager::Instance</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classDestroyer_1fca7b3c4e9e833602dff10a241a82954" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Destroyer&lt; DOOMED &gt;::Destroyer</definition>
+        <argsstring>(const Destroyer&lt; DOOMED &gt; &amp;)</argsstring>
+        <name>Destroyer</name>
+        <param>
+          <type>const <ref refid="classDestroyer" kindref="compound">Destroyer</ref>&lt; DOOMED &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/Destroyer.h" line="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classDestroyer_1448a87dc2bcf2fab4cf121d6a41f6102" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Destroyer&lt; DOOMED &gt;::operator=</definition>
+        <argsstring>(const Destroyer&lt; DOOMED &gt; &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classDestroyer" kindref="compound">Destroyer</ref>&lt; DOOMED &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/Destroyer.h" line="35"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="60">
+        <label>DOOMED</label>
+      </node>
+      <node id="59">
+        <label>Destroyer&lt; DOOMED &gt;</label>
+        <link refid="classDestroyer"/>
+        <childnode refid="60" relation="usage">
+          <edgelabel>_doomed</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/mononofu/Programmieren/TaskEngine/src/Destroyer.h" line="25" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/Destroyer.h" bodystart="24" bodyend="38"/>
+    <listofallmembers>
+      <member refid="classDestroyer_14b7dccb9dfee34f6677d38b15e89c3b0" prot="private" virt="non-virtual"><scope>Destroyer</scope><name>_doomed</name></member>
+      <member refid="classDestroyer_1533dbd85ce12598c700ca5330148985e" prot="public" virt="non-virtual"><scope>Destroyer</scope><name>Destroyer</name></member>
+      <member refid="classDestroyer_1fca7b3c4e9e833602dff10a241a82954" prot="private" virt="non-virtual"><scope>Destroyer</scope><name>Destroyer</name></member>
+      <member refid="classDestroyer_1448a87dc2bcf2fab4cf121d6a41f6102" prot="private" virt="non-virtual"><scope>Destroyer</scope><name>operator=</name></member>
+      <member refid="classDestroyer_14d605e2386ed1a59ce0aa1ca28fd78bd" prot="public" virt="non-virtual"><scope>Destroyer</scope><name>SetDoomed</name></member>
+      <member refid="classDestroyer_19c6346348e2073224de3738314a77ebe" prot="public" virt="non-virtual"><scope>Destroyer</scope><name>~Destroyer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

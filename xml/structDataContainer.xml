@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="structDataContainer" kind="struct" prot="public">
+    <compoundname>DataContainer</compoundname>
+    <includes refid="DataContainer_8h" local="no">DataContainer.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structDataContainer_135f6e0192771194e01526a8ab8fdf42b" prot="public" static="no" mutable="no">
+        <type><ref refid="classDataIdentifier" kindref="compound">DataIdentifier</ref></type>
+        <definition>DataIdentifier DataContainer::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/DataContainer.h" line="31" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/DataContainer.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structDataContainer_1febb3fde8b4ae1fa777b0f736fb67803" prot="public" static="no" mutable="no">
+        <type>boost::any</type>
+        <definition>boost::any DataContainer::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/DataContainer.h" line="32" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/DataContainer.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="classFoo_1845f0eabe78a817079e1224e3227f748" compoundref="taskenginetest_8cpp" startline="88" endline="116">Foo::doSomething</referencedby>
+        <referencedby refid="classFoo_14c5b4fa3f309ca3a850a3c43436a2dbc" compoundref="taskenginetest_8cpp" startline="118" endline="122">Foo::receiveData</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structDataContainer_176e1e60d717a64b7f742699f67c76276" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DataContainer::DataContainer</definition>
+        <argsstring>()</argsstring>
+        <name>DataContainer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/DataContainer.h" line="29" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/DataContainer.cpp" bodystart="23" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="structDataContainer_1abe61a8f3196df2bf8fb4f5ea81dbbd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DataContainer::DataContainer</definition>
+        <argsstring>(boost::any data)</argsstring>
+        <name>DataContainer</name>
+        <param>
+          <type>boost::any</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/DataContainer.h" line="30" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/DataContainer.cpp" bodystart="27" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="52">
+        <label>DataIdentifier</label>
+        <link refid="classDataIdentifier"/>
+      </node>
+      <node id="51">
+        <label>DataContainer</label>
+        <link refid="structDataContainer"/>
+        <childnode refid="52" relation="usage">
+          <edgelabel>id</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/mononofu/Programmieren/TaskEngine/src/DataContainer.h" line="28" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/DataContainer.h" bodystart="27" bodyend="33"/>
+    <listofallmembers>
+      <member refid="structDataContainer_1febb3fde8b4ae1fa777b0f736fb67803" prot="public" virt="non-virtual"><scope>DataContainer</scope><name>data</name></member>
+      <member refid="structDataContainer_176e1e60d717a64b7f742699f67c76276" prot="public" virt="non-virtual"><scope>DataContainer</scope><name>DataContainer</name></member>
+      <member refid="structDataContainer_1abe61a8f3196df2bf8fb4f5ea81dbbd7" prot="public" virt="non-virtual"><scope>DataContainer</scope><name>DataContainer</name></member>
+      <member refid="structDataContainer_135f6e0192771194e01526a8ab8fdf42b" prot="public" virt="non-virtual"><scope>DataContainer</scope><name>id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

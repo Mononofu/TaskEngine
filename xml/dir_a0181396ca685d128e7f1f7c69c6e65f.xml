@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="dir_a0181396ca685d128e7f1f7c69c6e65f" kind="dir">
+    <compoundname>Programmieren/TaskEngine/src/</compoundname>
+    <innerdir refid="dir_a1754889f91e97ea87f7fe89d4096ad8">Programmieren/TaskEngine/src/CMakeFiles/</innerdir>
+    <innerfile refid="DataContainer_8cpp">DataContainer.cpp</innerfile>
+    <innerfile refid="DataContainer_8h">DataContainer.h</innerfile>
+    <innerfile refid="DataIdentifier_8cpp">DataIdentifier.cpp</innerfile>
+    <innerfile refid="DataIdentifier_8h">DataIdentifier.h</innerfile>
+    <innerfile refid="DataProvider_8h">DataProvider.h</innerfile>
+    <innerfile refid="debug_8cpp">debug.cpp</innerfile>
+    <innerfile refid="debug_8h">debug.h</innerfile>
+    <innerfile refid="Destroyer_8h">Destroyer.h</innerfile>
+    <innerfile refid="FeedSubscriber_8h">FeedSubscriber.h</innerfile>
+    <innerfile refid="InformationManager_8cpp">InformationManager.cpp</innerfile>
+    <innerfile refid="InformationManager_8h">InformationManager.h</innerfile>
+    <innerfile refid="SynchronisationBarrier_8cpp">SynchronisationBarrier.cpp</innerfile>
+    <innerfile refid="SynchronisationBarrier_8h">SynchronisationBarrier.h</innerfile>
+    <innerfile refid="Task_8cpp">Task.cpp</innerfile>
+    <innerfile refid="Task_8h">Task.h</innerfile>
+    <innerfile refid="taskengine_8h">taskengine.h</innerfile>
+    <innerfile refid="taskenginetest_8cpp">taskenginetest.cpp</innerfile>
+    <innerfile refid="Threadmanager_8cpp">Threadmanager.cpp</innerfile>
+    <innerfile refid="Threadmanager_8h">Threadmanager.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mononofu/Programmieren/TaskEngine/src/"/>
+  </compounddef>
+</doxygen>

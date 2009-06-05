@@ -1,0 +1,373 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="debug_8h" kind="file">
+    <compoundname>debug.h</compoundname>
+    <includes local="no">boost/log/common.hpp</includes>
+    <includes local="no">boost/log/core.hpp</includes>
+    <includes local="no">boost/log/attributes/clock.hpp</includes>
+    <includes local="no">boost/log/attributes/counter.hpp</includes>
+    <includes local="no">boost/log/sources/basic_logger.hpp</includes>
+    <includes local="no">boost/log/sources/severity_logger.hpp</includes>
+    <includes local="no">boost/log/sources/global_logger_storage.hpp</includes>
+    <includes local="no">boost/log/sources/record_ostream.hpp</includes>
+    <includes local="no">boost/log/sinks/sink.hpp</includes>
+    <includes local="no">boost/log/sinks/text_ostream_backend.hpp</includes>
+    <includes local="no">boost/log/formatters/format.hpp</includes>
+    <includes local="no">boost/log/formatters/attr.hpp</includes>
+    <includes local="no">boost/log/formatters/date_time.hpp</includes>
+    <includes local="no">boost/log/formatters/message.hpp</includes>
+    <includes local="no">boost/log/utility/empty_deleter.hpp</includes>
+    <includes local="no">boost/log/utility/scoped_attribute.hpp</includes>
+    <includedby refid="debug_8cpp" local="yes">Programmieren/TaskEngine/src/debug.cpp</includedby>
+    <includedby refid="InformationManager_8cpp" local="yes">Programmieren/TaskEngine/src/InformationManager.cpp</includedby>
+    <includedby refid="taskengine_8h" local="yes">Programmieren/TaskEngine/src/taskengine.h</includedby>
+    <includedby refid="taskenginetest_8cpp" local="yes">Programmieren/TaskEngine/src/taskenginetest.cpp</includedby>
+    <incdepgraph>
+      <node id="369">
+        <label>boost/log/utility/scoped_attribute.hpp</label>
+      </node>
+      <node id="358">
+        <label>boost/log/sources/basic_logger.hpp</label>
+      </node>
+      <node id="365">
+        <label>boost/log/formatters/attr.hpp</label>
+      </node>
+      <node id="355">
+        <label>boost/log/core.hpp</label>
+      </node>
+      <node id="359">
+        <label>boost/log/sources/severity_logger.hpp</label>
+      </node>
+      <node id="353">
+        <label>Programmieren/TaskEngine/src/debug.h</label>
+        <link refid="debug.h"/>
+        <childnode refid="354" relation="include">
+        </childnode>
+        <childnode refid="355" relation="include">
+        </childnode>
+        <childnode refid="356" relation="include">
+        </childnode>
+        <childnode refid="357" relation="include">
+        </childnode>
+        <childnode refid="358" relation="include">
+        </childnode>
+        <childnode refid="359" relation="include">
+        </childnode>
+        <childnode refid="360" relation="include">
+        </childnode>
+        <childnode refid="361" relation="include">
+        </childnode>
+        <childnode refid="362" relation="include">
+        </childnode>
+        <childnode refid="363" relation="include">
+        </childnode>
+        <childnode refid="364" relation="include">
+        </childnode>
+        <childnode refid="365" relation="include">
+        </childnode>
+        <childnode refid="366" relation="include">
+        </childnode>
+        <childnode refid="367" relation="include">
+        </childnode>
+        <childnode refid="368" relation="include">
+        </childnode>
+        <childnode refid="369" relation="include">
+        </childnode>
+      </node>
+      <node id="368">
+        <label>boost/log/utility/empty_deleter.hpp</label>
+      </node>
+      <node id="357">
+        <label>boost/log/attributes/counter.hpp</label>
+      </node>
+      <node id="367">
+        <label>boost/log/formatters/message.hpp</label>
+      </node>
+      <node id="366">
+        <label>boost/log/formatters/date_time.hpp</label>
+      </node>
+      <node id="363">
+        <label>boost/log/sinks/text_ostream_backend.hpp</label>
+      </node>
+      <node id="361">
+        <label>boost/log/sources/record_ostream.hpp</label>
+      </node>
+      <node id="360">
+        <label>boost/log/sources/global_logger_storage.hpp</label>
+      </node>
+      <node id="356">
+        <label>boost/log/attributes/clock.hpp</label>
+      </node>
+      <node id="354">
+        <label>boost/log/common.hpp</label>
+      </node>
+      <node id="364">
+        <label>boost/log/formatters/format.hpp</label>
+      </node>
+      <node id="362">
+        <label>boost/log/sinks/sink.hpp</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="372">
+        <label>Programmieren/TaskEngine/src/InformationManager.cpp</label>
+        <link refid="InformationManager_8cpp"/>
+      </node>
+      <node id="373">
+        <label>Programmieren/TaskEngine/src/taskengine.h</label>
+        <link refid="taskengine_8h"/>
+        <childnode refid="374" relation="include">
+        </childnode>
+      </node>
+      <node id="370">
+        <label>Programmieren/TaskEngine/src/debug.h</label>
+        <link refid="debug.h"/>
+        <childnode refid="371" relation="include">
+        </childnode>
+        <childnode refid="372" relation="include">
+        </childnode>
+        <childnode refid="373" relation="include">
+        </childnode>
+        <childnode refid="374" relation="include">
+        </childnode>
+      </node>
+      <node id="374">
+        <label>Programmieren/TaskEngine/src/taskenginetest.cpp</label>
+        <link refid="taskenginetest_8cpp"/>
+      </node>
+      <node id="371">
+        <label>Programmieren/TaskEngine/src/debug.cpp</label>
+        <link refid="debug_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="debug_8h_13e3c70251bcc0d8ada795cb86e74142a" prot="public" static="no">
+        <name>Dout</name>
+        <initializer>BOOST_LOG_SCOPED_THREAD_TAG(&quot;ThreadID&quot;, boost::thread::id, boost::this_thread::get_id()); BOOST_LOG_SEV(get_test_lg(), normal)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/debug.h" line="84" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/debug.h" bodystart="84" bodyend="-1"/>
+        <referencedby refid="classBaz_12b1607ab4b3771bfb4c2763eee9ecfd8" compoundref="taskenginetest_8cpp" startline="35" endline="48">Baz::doStep</referencedby>
+        <referencedby refid="classFoo_14c5b4fa3f309ca3a850a3c43436a2dbc" compoundref="taskenginetest_8cpp" startline="118" endline="122">Foo::receiveData</referencedby>
+        <referencedby refid="classInformationManager_173a67ade9880878f70d2acae368af900" compoundref="InformationManager_8cpp" startline="43" endline="58">InformationManager::requestData</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="debug_8h_1e2158b5a72df68048f79218872edb393" prot="public" static="no">
+        <name>Dwar</name>
+        <initializer>BOOST_LOG_SCOPED_THREAD_TAG(&quot;ThreadID&quot;, boost::thread::id, boost::this_thread::get_id()); BOOST_LOG_SEV(get_test_lg(), warning)  &lt;&lt; __FILE__ &lt;&lt; __LINE__</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/debug.h" line="85" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/debug.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="debug_8h_1c25ef055a50dae93508175b5df08d375" prot="public" static="no">
+        <name>Derr</name>
+        <initializer>BOOST_LOG_SCOPED_THREAD_TAG(&quot;ThreadID&quot;, boost::thread::id, boost::this_thread::get_id()); BOOST_LOG_SEV(get_test_lg(), error)  &lt;&lt; __FILE__ &lt;&lt; __LINE__</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/debug.h" line="86" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/debug.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="debug_8h_144fe714b53f91f01aab7d314d83d723d" prot="public" static="no">
+        <name>severity_level</name>
+        <enumvalue id="debug_8h_144fe714b53f91f01aab7d314d83d723debc81705969b8c5ae986b0b2ec08d1d5" prot="public">
+          <name>normal</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="debug_8h_144fe714b53f91f01aab7d314d83d723d89dee1d3fff432a884ac8199fd6c2909" prot="public">
+          <name>notification</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="debug_8h_144fe714b53f91f01aab7d314d83d723d8de9aef05fc85e519a0cfce33573f492" prot="public">
+          <name>warning</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="debug_8h_144fe714b53f91f01aab7d314d83d723dd606e435413ea0944dd00d49e901e4ed" prot="public">
+          <name>error</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="debug_8h_144fe714b53f91f01aab7d314d83d723d5fe0ea375791d13455a34f3d40dc9c7d" prot="public">
+          <name>critical</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/debug.h" line="52" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/debug.h" bodystart="51" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="debug_8h_112636725c67e44effd6b3787e86a4569" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>CharT</declname>
+            <defname>CharT</defname>
+          </param>
+          <param>
+            <type>typename</type>
+            <declname>TraitsT</declname>
+            <defname>TraitsT</defname>
+          </param>
+        </templateparamlist>
+        <type>std::basic_ostream&lt; CharT, TraitsT &gt; &amp;</type>
+        <definition>std::basic_ostream&lt; CharT, TraitsT &gt;&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::basic_ostream&lt; CharT, TraitsT &gt; &amp;strm, severity_level lvl)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::basic_ostream&lt; CharT, TraitsT &gt; &amp;</type>
+          <declname>strm</declname>
+        </param>
+        <param>
+          <type><ref refid="debug_8h_144fe714b53f91f01aab7d314d83d723d" kindref="member">severity_level</ref></type>
+          <declname>lvl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/debug.h" line="66" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/debug.h" bodystart="64" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="debug_8h_10b7438b525ca7565e60bcab4d2d70805" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void initDebug</definition>
+        <argsstring>()</argsstring>
+        <name>initDebug</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/debug.h" line="82" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/debug.cpp" bodystart="34" bodyend="50"/>
+        <referencedby refid="taskenginetest_8cpp_13c04138a5bfe5d72780bb7e82a18e627" compoundref="taskenginetest_8cpp" startline="125" endline="132">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Copyright<sp/>(C)<sp/>2008-09<sp/>by<sp/>Julian<sp/>Schrittwieser<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/><sp/>J.Schrittwieser@gmail.com<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by<sp/><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2<sp/>of<sp/>the<sp/>License,<sp/>or<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/>along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/>59<sp/>Temple<sp/>Place<sp/>-<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307,<sp/>USA.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>***************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DEBUG_HPP</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DEBUG_HPP</highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/log/common.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/log/core.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/log/attributes/clock.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/log/attributes/counter.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/log/sources/basic_logger.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/log/sources/severity_logger.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/log/sources/global_logger_storage.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/log/sources/record_ostream.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/log/sinks/sink.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/log/sinks/text_ostream_backend.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/log/formatters/format.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/log/formatters/attr.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/log/formatters/date_time.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/log/formatters/message.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/log/utility/empty_deleter.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/log/utility/scoped_attribute.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">logging<sp/>=<sp/>boost::log;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">attrs<sp/>=<sp/>boost::log::attributes;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">src<sp/>=<sp/>boost::log::sources;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">sinks<sp/>=<sp/>boost::log::sinks;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">fmt<sp/>=<sp/>boost::log::formatters;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">keywords<sp/>=<sp/>boost::log::keywords;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Here<sp/>we<sp/>define<sp/>our<sp/>application<sp/>severity<sp/>levels.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="debug_8h_144fe714b53f91f01aab7d314d83d723d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="debug_8h_144fe714b53f91f01aab7d314d83d723d" kindref="member">severity_level</ref></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53" refid="debug_8h_144fe714b53f91f01aab7d314d83d723debc81705969b8c5ae986b0b2ec08d1d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="debug_8h_144fe714b53f91f01aab7d314d83d723debc81705969b8c5ae986b0b2ec08d1d5" kindref="member">normal</ref>,</highlight></codeline>
+<codeline lineno="54" refid="debug_8h_144fe714b53f91f01aab7d314d83d723d89dee1d3fff432a884ac8199fd6c2909" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="debug_8h_144fe714b53f91f01aab7d314d83d723d89dee1d3fff432a884ac8199fd6c2909" kindref="member">notification</ref>,</highlight></codeline>
+<codeline lineno="55" refid="debug_8h_144fe714b53f91f01aab7d314d83d723d8de9aef05fc85e519a0cfce33573f492" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="debug_8h_144fe714b53f91f01aab7d314d83d723d8de9aef05fc85e519a0cfce33573f492" kindref="member">warning</ref>,</highlight></codeline>
+<codeline lineno="56" refid="debug_8h_144fe714b53f91f01aab7d314d83d723dd606e435413ea0944dd00d49e901e4ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="debug_8h_144fe714b53f91f01aab7d314d83d723dd606e435413ea0944dd00d49e901e4ed" kindref="member">error</ref>,</highlight></codeline>
+<codeline lineno="57" refid="debug_8h_144fe714b53f91f01aab7d314d83d723d5fe0ea375791d13455a34f3d40dc9c7d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="debug_8h_144fe714b53f91f01aab7d314d83d723d5fe0ea375791d13455a34f3d40dc9c7d" kindref="member">critical</ref></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">BOOST_LOG_DECLARE_GLOBAL_LOGGER(test_lg,<sp/>src::severity_logger_mt&lt;<sp/>severity_level<sp/>&gt;)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>formatting<sp/>logic<sp/>for<sp/>the<sp/>severity<sp/>level</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal">template&lt;<sp/>typename<sp/>CharT,<sp/>typename<sp/>TraitsT<sp/>&gt;</highlight></codeline>
+<codeline lineno="64" refid="debug_8h_112636725c67e44effd6b3787e86a4569" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>inline<sp/>std::basic_ostream&lt;<sp/>CharT,<sp/>TraitsT<sp/>&gt;&amp;<sp/>operator&lt;&lt;<sp/>(</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::basic_ostream&lt;<sp/>CharT,<sp/>TraitsT<sp/>&gt;&amp;<sp/>strm,<sp/><ref refid="debug_8h_144fe714b53f91f01aab7d314d83d723d" kindref="member">severity_level</ref><sp/>lvl)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>str[]<sp/>=</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;normal&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;notification&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;warning&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;critical&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(static_cast&lt;<sp/>std::size_t<sp/>&gt;(lvl)<sp/>&lt;<sp/>(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(str)<sp/>/<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(*str)))</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strm<sp/>&lt;&lt;<sp/>str[lvl];</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strm<sp/>&lt;&lt;<sp/>static_cast&lt;<sp/>int<sp/>&gt;(lvl);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>strm;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="debug_8cpp_10b7438b525ca7565e60bcab4d2d70805" kindref="member">initDebug</ref>();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="debug_8h_13e3c70251bcc0d8ada795cb86e74142a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Dout<sp/>BOOST_LOG_SCOPED_THREAD_TAG(&quot;ThreadID&quot;,<sp/>boost::thread::id,<sp/>boost::this_thread::get_id());<sp/>BOOST_LOG_SEV(get_test_lg(),<sp/>normal)<sp/></highlight></codeline>
+<codeline lineno="85" refid="debug_8h_1e2158b5a72df68048f79218872edb393" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>Dwar<sp/>BOOST_LOG_SCOPED_THREAD_TAG(&quot;ThreadID&quot;,<sp/>boost::thread::id,<sp/>boost::this_thread::get_id());<sp/>BOOST_LOG_SEV(get_test_lg(),<sp/>warning)<sp/><sp/>&lt;&lt;<sp/>__FILE__<sp/>&lt;&lt;<sp/>__LINE__</highlight></codeline>
+<codeline lineno="86" refid="debug_8h_1c25ef055a50dae93508175b5df08d375" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>Derr<sp/>BOOST_LOG_SCOPED_THREAD_TAG(&quot;ThreadID&quot;,<sp/>boost::thread::id,<sp/>boost::this_thread::get_id());<sp/>BOOST_LOG_SEV(get_test_lg(),<sp/>error)<sp/><sp/>&lt;&lt;<sp/>__FILE__<sp/>&lt;&lt;<sp/>__LINE__</highlight></codeline>
+<codeline lineno="87"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/mononofu/Programmieren/TaskEngine/src/debug.h"/>
+  </compounddef>
+</doxygen>

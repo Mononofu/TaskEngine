@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classFeedSubscriber" kind="class" prot="public">
+    <compoundname>FeedSubscriber</compoundname>
+    <derivedcompoundref refid="classFoo" prot="public" virt="non-virtual">Foo</derivedcompoundref>
+    <includes refid="FeedSubscriber_8h" local="no">FeedSubscriber.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classFeedSubscriber_18b866e7ab680b8b06cf2ca7ebc7dd94e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class InformationManager</definition>
+        <argsstring></argsstring>
+        <name>InformationManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/FeedSubscriber.h" line="27" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/FeedSubscriber.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classFeedSubscriber_10446a562cef5bbb5562ba057f72065ab" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void FeedSubscriber::receiveData</definition>
+        <argsstring>(std::string feedName, DataContainer data)=0</argsstring>
+        <name>receiveData</name>
+        <reimplementedby refid="classFoo_14c5b4fa3f309ca3a850a3c43436a2dbc">receiveData</reimplementedby>
+        <param>
+          <type>std::string</type>
+          <declname>feedName</declname>
+        </param>
+        <param>
+          <type><ref refid="structDataContainer" kindref="compound">DataContainer</ref></type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/FeedSubscriber.h" line="29"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="61">
+        <label>FeedSubscriber</label>
+        <link refid="classFeedSubscriber"/>
+      </node>
+      <node id="62">
+        <label>Foo</label>
+        <link refid="classFoo"/>
+        <childnode refid="61" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/mononofu/Programmieren/TaskEngine/src/FeedSubscriber.h" line="25" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/FeedSubscriber.h" bodystart="24" bodyend="30"/>
+    <listofallmembers>
+      <member refid="classFeedSubscriber_18b866e7ab680b8b06cf2ca7ebc7dd94e" prot="public" virt="non-virtual"><scope>FeedSubscriber</scope><name>InformationManager</name></member>
+      <member refid="classFeedSubscriber_10446a562cef5bbb5562ba057f72065ab" prot="protected" virt="pure-virtual"><scope>FeedSubscriber</scope><name>receiveData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

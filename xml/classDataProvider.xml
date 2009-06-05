@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classDataProvider" kind="class" prot="public">
+    <compoundname>DataProvider</compoundname>
+    <derivedcompoundref refid="classBar" prot="public" virt="non-virtual">Bar</derivedcompoundref>
+    <includes refid="DataProvider_8h" local="no">DataProvider.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classDataProvider_18b866e7ab680b8b06cf2ca7ebc7dd94e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class InformationManager</definition>
+        <argsstring></argsstring>
+        <name>InformationManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/DataProvider.h" line="30" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/DataProvider.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classDataProvider_1bb3b401695b8a7b61477f5b1f17e92a7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="structDataContainer" kindref="compound">DataContainer</ref></type>
+        <definition>virtual DataContainer DataProvider::getData</definition>
+        <argsstring>(const DataIdentifier &amp;id)=0</argsstring>
+        <name>getData</name>
+        <reimplementedby refid="classBar_12d285596b5a4ab73bbb903bc8a3c9ffc">getData</reimplementedby>
+        <param>
+          <type>const <ref refid="classDataIdentifier" kindref="compound">DataIdentifier</ref> &amp;</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/DataProvider.h" line="32"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="55">
+        <label>DataProvider</label>
+        <link refid="classDataProvider"/>
+      </node>
+      <node id="56">
+        <label>Bar</label>
+        <link refid="classBar"/>
+        <childnode refid="55" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/mononofu/Programmieren/TaskEngine/src/DataProvider.h" line="28" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/DataProvider.h" bodystart="27" bodyend="33"/>
+    <listofallmembers>
+      <member refid="classDataProvider_1bb3b401695b8a7b61477f5b1f17e92a7" prot="protected" virt="pure-virtual"><scope>DataProvider</scope><name>getData</name></member>
+      <member refid="classDataProvider_18b866e7ab680b8b06cf2ca7ebc7dd94e" prot="public" virt="non-virtual"><scope>DataProvider</scope><name>InformationManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

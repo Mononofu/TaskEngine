@@ -1,0 +1,307 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classTask" kind="class" prot="public">
+    <compoundname>Task</compoundname>
+    <derivedcompoundref refid="classBaz" prot="public" virt="non-virtual">Baz</derivedcompoundref>
+    <derivedcompoundref refid="classThreadmanager" prot="public" virt="non-virtual">Threadmanager</derivedcompoundref>
+    <includes refid="Task_8h" local="no">Task.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classTask_1f3418a701f39caa26c06ff78f70c4f55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Threadmanager</definition>
+        <argsstring></argsstring>
+        <name>Threadmanager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/Task.h" line="35" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/Task.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classTask_14814188fd4a04ed4ad18b002f848569f" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Task::running</definition>
+        <argsstring></argsstring>
+        <name>running</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/Task.h" line="43" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/Task.h" bodystart="43" bodyend="-1"/>
+        <referencedby refid="classTask_1934daf1fa163140db2909242dc27925a" compoundref="Task_8cpp" startline="31" endline="39">run</referencedby>
+        <referencedby refid="classTask_1ba5eb3d6c2a034aa0e319383fbec68c4" compoundref="Task_8cpp" startline="51" endline="54">stop</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classTask_139d5bf06f3cd6eaa35af62b381c297b7" prot="protected" static="no" mutable="no">
+        <type>boost::thread *</type>
+        <definition>boost::thread* Task::thisThread</definition>
+        <argsstring></argsstring>
+        <name>thisThread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/Task.h" line="44" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/Task.h" bodystart="44" bodyend="-1"/>
+        <referencedby refid="classTask_1934daf1fa163140db2909242dc27925a" compoundref="Task_8cpp" startline="31" endline="39">run</referencedby>
+        <referencedby refid="classThreadmanager_1d5d761af3ed38a3dfe9c4400a4445fbc" compoundref="Threadmanager_8cpp" startline="70" endline="80">Threadmanager::waitForThreadsToFinish</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classTask_17f54395bf9598197ba2c224ac89699dc" prot="private" static="no" mutable="no">
+        <type><ref refid="classSynchronisationBarrier" kindref="compound">SynchronisationBarrier</ref> *</type>
+        <definition>SynchronisationBarrier* Task::barrier</definition>
+        <argsstring></argsstring>
+        <name>barrier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/Task.h" line="46" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/Task.h" bodystart="46" bodyend="-1"/>
+        <referencedby refid="classTask_10c57c76ff62ca6333e62158861883cbe" compoundref="Task_8cpp" startline="41" endline="49">mainLoop</referencedby>
+        <referencedby refid="classTask_10ca53354bdc006762a0fda68c64f7608" compoundref="Task_8cpp" startline="25" endline="29">Task</referencedby>
+        <referencedby refid="classThreadmanager_12eba7621de91a4fd65f9351883b8a6df" compoundref="Threadmanager_8cpp" startline="47" endline="68">Threadmanager::willStartThreadOnMe</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classTask_1b522760063b8782725e31fbebccb6222" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Task::speedFactor</definition>
+        <argsstring></argsstring>
+        <name>speedFactor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/Task.h" line="47" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/Task.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTask_10ca53354bdc006762a0fda68c64f7608" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Task::Task</definition>
+        <argsstring>()</argsstring>
+        <name>Task</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/Task.h" line="31" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/Task.cpp" bodystart="25" bodyend="29"/>
+        <references refid="classTask_17f54395bf9598197ba2c224ac89699dc" compoundref="Task_8h" startline="46">barrier</references>
+        <references refid="classTask_15eedf2c701b1a4e797ef6dfd178ff8f2" compoundref="Task_8cpp" startline="56" endline="65">setSynchronisationBarrier</references>
+      </memberdef>
+      <memberdef kind="function" id="classTask_1934daf1fa163140db2909242dc27925a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boost::thread *</type>
+        <definition>boost::thread * Task::run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/Task.h" line="32" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/Task.cpp" bodystart="31" bodyend="39"/>
+        <references refid="classTask_10c57c76ff62ca6333e62158861883cbe" compoundref="Task_8cpp" startline="41" endline="49">mainLoop</references>
+        <references refid="classTask_14814188fd4a04ed4ad18b002f848569f" compoundref="Task_8h" startline="43">running</references>
+        <references refid="classTask_139d5bf06f3cd6eaa35af62b381c297b7" compoundref="Task_8h" startline="44">thisThread</references>
+        <references refid="classTask_1b9e4f3d7fc97a09099bbab53735cf4c7" compoundref="Task_8h" startline="40" endline="40">willStartThreadOnMe</references>
+        <referencedby refid="classFoo_1845f0eabe78a817079e1224e3227f748" compoundref="taskenginetest_8cpp" startline="88" endline="116">Foo::doSomething</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classTask_1ba5eb3d6c2a034aa0e319383fbec68c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Task::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/Task.h" line="33" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/Task.cpp" bodystart="51" bodyend="54"/>
+        <references refid="classTask_14814188fd4a04ed4ad18b002f848569f" compoundref="Task_8h" startline="43">running</references>
+      </memberdef>
+      <memberdef kind="function" id="classTask_193c2dd660089352166c5f3c1437a552f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Task::setSpeedFactor</definition>
+        <argsstring>(int factor)</argsstring>
+        <name>setSpeedFactor</name>
+        <param>
+          <type>int</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/Task.h" line="34"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classTask_10c57c76ff62ca6333e62158861883cbe" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Task::mainLoop</definition>
+        <argsstring>()</argsstring>
+        <name>mainLoop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/Task.h" line="37" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/Task.cpp" bodystart="41" bodyend="49"/>
+        <references refid="classTask_17f54395bf9598197ba2c224ac89699dc" compoundref="Task_8h" startline="46">barrier</references>
+        <references refid="classTask_13d4b421d5f855c51770451f4a25cf1e8">doStep</references>
+        <references refid="classSynchronisationBarrier_1194738032a7876605b60216b86b077f1" compoundref="SynchronisationBarrier_8cpp" startline="29" endline="32">SynchronisationBarrier::stepDone</references>
+        <references refid="classTask_1e1f9f9e7cb5f2e26e159b0bd612312bc" compoundref="Task_8h" startline="41" endline="41">threadWillStart</references>
+        <references refid="classTask_1b5f3345402ec08681fba06a051a235be" compoundref="Task_8h" startline="42" endline="42">threadWillStop</references>
+        <referencedby refid="classTask_1934daf1fa163140db2909242dc27925a" compoundref="Task_8cpp" startline="31" endline="39">run</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classTask_13d4b421d5f855c51770451f4a25cf1e8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Task::doStep</definition>
+        <argsstring>()=0</argsstring>
+        <name>doStep</name>
+        <reimplementedby refid="classThreadmanager_123c7c589d500161cc0fa47c6d88d86ac">doStep</reimplementedby>
+        <reimplementedby refid="classBaz_12b1607ab4b3771bfb4c2763eee9ecfd8">doStep</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/Task.h" line="38"/>
+        <referencedby refid="classTask_10c57c76ff62ca6333e62158861883cbe" compoundref="Task_8cpp" startline="41" endline="49">mainLoop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classTask_15eedf2c701b1a4e797ef6dfd178ff8f2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Task::setSynchronisationBarrier</definition>
+        <argsstring>(SynchronisationBarrier *barrier)</argsstring>
+        <name>setSynchronisationBarrier</name>
+        <param>
+          <type><ref refid="classSynchronisationBarrier" kindref="compound">SynchronisationBarrier</ref> *</type>
+          <declname>barrier</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/Task.h" line="39" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/Task.cpp" bodystart="56" bodyend="65"/>
+        <references refid="classSynchronisationBarrier_10e5e35b270dd20cbe96da4f19ec3e176" compoundref="SynchronisationBarrier_8cpp" startline="34" endline="42">SynchronisationBarrier::signIn</references>
+        <references refid="classSynchronisationBarrier_11d86d60167d0022b90fbb85c73f6ed42" compoundref="SynchronisationBarrier_8cpp" startline="44" endline="59">SynchronisationBarrier::signOut</references>
+        <referencedby refid="classTask_10ca53354bdc006762a0fda68c64f7608" compoundref="Task_8cpp" startline="25" endline="29">Task</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classTask_1b9e4f3d7fc97a09099bbab53735cf4c7" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool Task::willStartThreadOnMe</definition>
+        <argsstring>()</argsstring>
+        <name>willStartThreadOnMe</name>
+        <reimplementedby refid="classThreadmanager_12eba7621de91a4fd65f9351883b8a6df">willStartThreadOnMe</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/Task.h" line="40" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/Task.h" bodystart="40" bodyend="40"/>
+        <referencedby refid="classTask_1934daf1fa163140db2909242dc27925a" compoundref="Task_8cpp" startline="31" endline="39">run</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classTask_1e1f9f9e7cb5f2e26e159b0bd612312bc" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Task::threadWillStart</definition>
+        <argsstring>()</argsstring>
+        <name>threadWillStart</name>
+        <reimplementedby refid="classBaz_17c3e1f88e238ada02a582230ed0d3685">threadWillStart</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/Task.h" line="41" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/Task.h" bodystart="41" bodyend="41"/>
+        <referencedby refid="classTask_10c57c76ff62ca6333e62158861883cbe" compoundref="Task_8cpp" startline="41" endline="49">mainLoop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classTask_1b5f3345402ec08681fba06a051a235be" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Task::threadWillStop</definition>
+        <argsstring>()</argsstring>
+        <name>threadWillStop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mononofu/Programmieren/TaskEngine/src/Task.h" line="42" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/Task.h" bodystart="42" bodyend="42"/>
+        <referencedby refid="classTask_10c57c76ff62ca6333e62158861883cbe" compoundref="Task_8cpp" startline="41" endline="49">mainLoop</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="73">
+        <label>Baz</label>
+        <link refid="classBaz"/>
+        <childnode refid="72" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>Task</label>
+        <link refid="classTask"/>
+      </node>
+      <node id="74">
+        <label>Threadmanager</label>
+        <link refid="classThreadmanager"/>
+        <childnode refid="72" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="76">
+        <label>SynchronisationBarrier</label>
+        <link refid="classSynchronisationBarrier"/>
+      </node>
+      <node id="75">
+        <label>Task</label>
+        <link refid="classTask"/>
+        <childnode refid="76" relation="usage">
+          <edgelabel>barrier</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/mononofu/Programmieren/TaskEngine/src/Task.h" line="29" bodyfile="/home/mononofu/Programmieren/TaskEngine/src/Task.h" bodystart="28" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classTask_17f54395bf9598197ba2c224ac89699dc" prot="private" virt="non-virtual"><scope>Task</scope><name>barrier</name></member>
+      <member refid="classTask_13d4b421d5f855c51770451f4a25cf1e8" prot="protected" virt="pure-virtual"><scope>Task</scope><name>doStep</name></member>
+      <member refid="classTask_10c57c76ff62ca6333e62158861883cbe" prot="protected" virt="non-virtual"><scope>Task</scope><name>mainLoop</name></member>
+      <member refid="classTask_1934daf1fa163140db2909242dc27925a" prot="public" virt="non-virtual"><scope>Task</scope><name>run</name></member>
+      <member refid="classTask_14814188fd4a04ed4ad18b002f848569f" prot="protected" virt="non-virtual"><scope>Task</scope><name>running</name></member>
+      <member refid="classTask_193c2dd660089352166c5f3c1437a552f" prot="public" virt="non-virtual"><scope>Task</scope><name>setSpeedFactor</name></member>
+      <member refid="classTask_15eedf2c701b1a4e797ef6dfd178ff8f2" prot="protected" virt="non-virtual"><scope>Task</scope><name>setSynchronisationBarrier</name></member>
+      <member refid="classTask_1b522760063b8782725e31fbebccb6222" prot="private" virt="non-virtual"><scope>Task</scope><name>speedFactor</name></member>
+      <member refid="classTask_1ba5eb3d6c2a034aa0e319383fbec68c4" prot="public" virt="non-virtual"><scope>Task</scope><name>stop</name></member>
+      <member refid="classTask_10ca53354bdc006762a0fda68c64f7608" prot="public" virt="non-virtual"><scope>Task</scope><name>Task</name></member>
+      <member refid="classTask_139d5bf06f3cd6eaa35af62b381c297b7" prot="protected" virt="non-virtual"><scope>Task</scope><name>thisThread</name></member>
+      <member refid="classTask_1f3418a701f39caa26c06ff78f70c4f55" prot="public" virt="non-virtual"><scope>Task</scope><name>Threadmanager</name></member>
+      <member refid="classTask_1e1f9f9e7cb5f2e26e159b0bd612312bc" prot="protected" virt="virtual"><scope>Task</scope><name>threadWillStart</name></member>
+      <member refid="classTask_1b5f3345402ec08681fba06a051a235be" prot="protected" virt="virtual"><scope>Task</scope><name>threadWillStop</name></member>
+      <member refid="classTask_1b9e4f3d7fc97a09099bbab53735cf4c7" prot="protected" virt="virtual"><scope>Task</scope><name>willStartThreadOnMe</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
