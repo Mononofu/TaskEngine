@@ -21,6 +21,7 @@
 #include "InformationManager.h"
 #include "debug.h"
 #include <boost/thread.hpp>
+#include <boost/thread/locks.hpp>
 
 InformationManager* InformationManager::instance;
 Destroyer<InformationManager> InformationManager::myDestroyer;
@@ -37,6 +38,7 @@ InformationManager* InformationManager::Instance()
 
 void InformationManager::offerData ( DataIdentifier id, DataProvider* provider )
 {
+	boost::lock_guard<boost::mutex> lock(providerMutex);
 	this->offeredData[id.humanReadable() ] = provider;
 }
 
@@ -70,6 +72,7 @@ void InformationManager::postDataToFeed ( std::string feedName, const DataContai
 
 void InformationManager::subscribeToFeed ( std::string feedName, const boost::function< void (const DataContainer&) >& callback )
 {
+	boost::mutex::scoped_lock lock(subscriberMutex);
 	subscribers[feedName].push_back ( callback );
 }
 

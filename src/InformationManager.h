@@ -27,6 +27,7 @@
 #include <vector>
 #include <boost/function.hpp>
 #include <boost/bind.hpp>
+#include <boost/thread/mutex.hpp>
 
 typedef int SubscriberID;
 
@@ -82,4 +83,6 @@ class InformationManager
 		static Destroyer<InformationManager> myDestroyer;
 		std::map<std::string, DataProvider *> offeredData;
 		std::map<std::string, std::vector< boost::function<void (const DataContainer&) > > > subscribers;
+		boost::mutex subscriberMutex;
+		boost::mutex providerMutex;
 };
