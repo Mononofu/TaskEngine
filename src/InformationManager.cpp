@@ -38,7 +38,7 @@ InformationManager* InformationManager::Instance()
 
 void InformationManager::offerData ( DataIdentifier id, DataProvider* provider )
 {
-	boost::lock_guard<boost::mutex> lock(providerMutex);
+	boost::mutex::scoped_lock lock(providerMutex);
 	this->offeredData[id.humanReadable() ] = provider;
 }
 

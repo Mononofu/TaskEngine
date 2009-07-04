@@ -39,6 +39,8 @@ debug.h
 /home/mononofu/Programmieren/TaskEngine/src/debug.h
 boost/thread.hpp
 -
+boost/thread/locks.hpp
+-
 
 /home/mononofu/Programmieren/TaskEngine/src/InformationManager.h
 DataIdentifier.h
@@ -56,6 +58,8 @@ vector
 boost/function.hpp
 -
 boost/bind.hpp
+-
+boost/thread/mutex.hpp
 -
 
 /home/mononofu/Programmieren/TaskEngine/src/SynchronisationBarrier.cpp
