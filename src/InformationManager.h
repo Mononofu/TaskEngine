@@ -21,13 +21,16 @@
 #include "DataIdentifier.h"
 #include "DataProvider.h"
 #include "Destroyer.h"
+#include "Task.h"
 
 #include <map>
 #include <string>
 #include <vector>
+#include <utility>
 #include <boost/function.hpp>
 #include <boost/bind.hpp>
 #include <boost/thread/mutex.hpp>
+#include <boost/thread/thread.hpp>
 
 typedef int SubscriberID;
 
@@ -37,7 +40,24 @@ typedef int SubscriberID;
  *  classes don't need to know about each other
  */
 
-class InformationManager
+enum thread_event
+{
+	THREAD_STARTING,
+	THREAD_STARTED,
+	THREAD_SHUTDOWN
+};
+
+// Datatype for feed 'app_event'
+enum app_event
+{
+	APP_STARTING,
+	APP_STARTED,
+	APP_SHUTDOWN,
+	APP_MINIMIZE
+};
+
+
+class InformationManager : public Task
 {
 	public:
 		/** Request a single piece of data.
@@ -74,6 +94,8 @@ class InformationManager
 		
 		// returns a pointer to the singleton
 		static InformationManager* Instance();
+		
+		bool doStep();
 	protected:
 		InformationManager() { }
 		virtual ~InformationManager() { }
@@ -83,6 +105,8 @@ class InformationManager
 		static Destroyer<InformationManager> myDestroyer;
 		std::map<std::string, DataProvider *> offeredData;
 		std::map<std::string, std::vector< boost::function<void (const DataContainer&) > > > subscribers;
+		std::vector< std::pair< std::string, DataContainer > > postedData;
 		boost::mutex subscriberMutex;
 		boost::mutex providerMutex;
+		boost::mutex postDataMutex;
 };

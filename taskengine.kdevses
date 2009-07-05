@@ -1,12 +1,12 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <!DOCTYPE KDevPrjSession>
 <KDevPrjSession>
- <DocsAndViews NumberOfDocuments="19" >
+ <DocsAndViews NumberOfDocuments="20" >
   <Doc0 NumberOfViews="1" URL="file:///home/mononofu/Programmieren/TaskEngine/src/InformationManager.h" >
-   <View0 Encoding="" line="85" Type="Source" />
+   <View0 Encoding="" Type="Source" />
   </Doc0>
   <Doc1 NumberOfViews="1" URL="file:///home/mononofu/Programmieren/TaskEngine/src/SynchronisationBarrier.h" >
-   <View0 Encoding="" line="0" Type="Source" />
+   <View0 Encoding="" Type="Source" />
   </Doc1>
   <Doc2 NumberOfViews="1" URL="file:///home/mononofu/Programmieren/TaskEngine/src/debug.h" >
    <View0 Encoding="" Type="Source" />
@@ -24,7 +24,7 @@
    <View0 Encoding="" Type="Source" />
   </Doc6>
   <Doc7 NumberOfViews="1" URL="file:///home/mononofu/Programmieren/TaskEngine/src/InformationManager.cpp" >
-   <View0 Encoding="" line="40" Type="Source" />
+   <View0 Encoding="" Type="Source" />
   </Doc7>
   <Doc8 NumberOfViews="1" URL="file:///home/mononofu/Programmieren/TaskEngine/src/Task.cpp" >
    <View0 Encoding="" Type="Source" />
@@ -48,7 +48,7 @@
    <View0 Encoding="" Type="Source" />
   </Doc14>
   <Doc15 NumberOfViews="1" URL="file:///home/mononofu/Programmieren/TaskEngine/src/SynchronisationBarrier.cpp" >
-   <View0 Encoding="" line="0" Type="Source" />
+   <View0 Encoding="" Type="Source" />
   </Doc15>
   <Doc16 NumberOfViews="1" URL="file:///home/mononofu/Programmieren/include/boost/function/function_template.hpp" >
    <View0 Encoding="" Type="Source" />
@@ -57,8 +57,11 @@
    <View0 Encoding="" Type="Source" />
   </Doc17>
   <Doc18 NumberOfViews="1" URL="file:///home/mononofu/Programmieren/TaskEngine/src/taskengine.h" >
-   <View0 Encoding="" line="7" Type="Source" />
+   <View0 Encoding="" Type="Source" />
   </Doc18>
+  <Doc19 NumberOfViews="1" URL="file:///home/mononofu/Programmieren/TaskEngine/src/DataContainer.cpp" >
+   <View0 Encoding="" line="0" Type="Source" />
+  </Doc19>
  </DocsAndViews>
  <pluginList>
   <kdevdebugger>

@@ -22,6 +22,8 @@
 #include <boost/bind.hpp>
 #include <boost/thread.hpp>
 #include "boost/date_time/posix_time/posix_time.hpp"
+#include "InformationManager.h"
+#include "debug.h"
 
 Task::Task()
 {
@@ -49,7 +51,10 @@ bool Task::step()
 
 void Task::mainLoop()
 {
+	InformationManager::Instance()->postDataToFeed( "thread_event", DataContainer(THREAD_STARTING) );
+	InformationManager::Instance()->subscribeToFeed("app_event", boost::bind( &Task::handleAppEvents, this, _1));
 	this->threadWillStart();
+	InformationManager::Instance()->postDataToFeed( "thread_event", DataContainer(THREAD_STARTED) );
 	while ( running )
 	{	
 		if(! step() )
@@ -59,6 +64,17 @@ void Task::mainLoop()
 		this->barrier->stepDone();
 	}
 	this->threadWillStop();
+}
+
+void Task::handleAppEvents(const DataContainer& data)
+{
+	app_event ev = boost::any_cast<app_event>(data.data);
+		
+	if( ev == APP_SHUTDOWN )
+	{
+		Dout << this->name << " received shutdown event";
+		this->running = false;
+	}
 }
 
 void Task::stop()

@@ -23,6 +23,10 @@
 #include <boost/thread.hpp>
 #include <boost/thread/locks.hpp>
 
+#include <boost/foreach.hpp>
+#define foreach         BOOST_FOREACH
+#define reverse_foreach BOOST_REVERSE_FOREACH
+
 InformationManager* InformationManager::instance;
 Destroyer<InformationManager> InformationManager::myDestroyer;
 
@@ -61,13 +65,26 @@ DataContainer InformationManager::requestData ( const DataIdentifier& id, int tr
 
 void InformationManager::postDataToFeed ( std::string feedName, const DataContainer& data )
 {
-	if ( subscribers[feedName].size() > 0 )
+	boost::mutex::scoped_lock lock(postDataMutex);
+	postedData.push_back( make_pair(feedName, data) );
+}
+
+bool InformationManager::doStep()
+{
+	boost::mutex::scoped_lock lock(postDataMutex);
+	std::pair< std::string, DataContainer > data;
+	foreach( data, postedData)
 	{
-		for ( std::vector< boost::function<void (const DataContainer&) > >::iterator iter = subscribers[feedName].begin(); iter != subscribers[feedName].end(); ++iter )
+		if ( subscribers[data.first].size() > 0 )
 		{
-			( *iter )( data );
+			foreach( boost::function<void (const DataContainer&) > callback, subscribers[data.first])
+			{
+				callback( data.second );
+			}
 		}
 	}
+	postedData.clear();
+	return true;
 }
 
 void InformationManager::subscribeToFeed ( std::string feedName, const boost::function< void (const DataContainer&) >& callback )

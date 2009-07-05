@@ -19,11 +19,13 @@
  ***************************************************************************/
 
 #include "Threadmanager.h"
+#include "InformationManager.h"
 
 
 
 Threadmanager::Threadmanager() : threadingMode ( THREADING_FREE_WHEELING )
 {
+	registerTask( InformationManager::Instance() );
 }
 
 bool Threadmanager::doStep()

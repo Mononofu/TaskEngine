@@ -31,15 +31,23 @@ DataProvider.h
 /home/mononofu/Programmieren/TaskEngine/src/DataProvider.h
 Destroyer.h
 /home/mononofu/Programmieren/TaskEngine/src/Destroyer.h
+Task.h
+/home/mononofu/Programmieren/TaskEngine/src/Task.h
 map
 -
 string
 -
 vector
 -
+utility
+-
 boost/function.hpp
 -
 boost/bind.hpp
+-
+boost/thread/mutex.hpp
+-
+boost/thread/thread.hpp
 -
 
 /home/mononofu/Programmieren/TaskEngine/src/SynchronisationBarrier.h
@@ -49,6 +57,8 @@ boost/thread/barrier.hpp
 /home/mononofu/Programmieren/TaskEngine/src/Task.h
 SynchronisationBarrier.h
 /home/mononofu/Programmieren/TaskEngine/src/SynchronisationBarrier.h
+DataContainer.h
+/home/mononofu/Programmieren/TaskEngine/src/DataContainer.h
 
 /home/mononofu/Programmieren/TaskEngine/src/Threadmanager.h
 Task.h

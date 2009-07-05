@@ -41,6 +41,8 @@ boost/thread.hpp
 -
 boost/thread/locks.hpp
 -
+boost/foreach.hpp
+-
 
 /home/mononofu/Programmieren/TaskEngine/src/InformationManager.h
 DataIdentifier.h
@@ -49,17 +51,23 @@ DataProvider.h
 /home/mononofu/Programmieren/TaskEngine/src/DataProvider.h
 Destroyer.h
 /home/mononofu/Programmieren/TaskEngine/src/Destroyer.h
+Task.h
+/home/mononofu/Programmieren/TaskEngine/src/Task.h
 map
 -
 string
 -
 vector
 -
+utility
+-
 boost/function.hpp
 -
 boost/bind.hpp
 -
 boost/thread/mutex.hpp
+-
+boost/thread/thread.hpp
 -
 
 /home/mononofu/Programmieren/TaskEngine/src/SynchronisationBarrier.cpp
@@ -79,14 +87,22 @@ boost/thread.hpp
 -
 boost/date_time/posix_time/posix_time.hpp
 /home/mononofu/Programmieren/TaskEngine/src/boost/date_time/posix_time/posix_time.hpp
+InformationManager.h
+/home/mononofu/Programmieren/TaskEngine/src/InformationManager.h
+debug.h
+/home/mononofu/Programmieren/TaskEngine/src/debug.h
 
 /home/mononofu/Programmieren/TaskEngine/src/Task.h
 SynchronisationBarrier.h
 /home/mononofu/Programmieren/TaskEngine/src/SynchronisationBarrier.h
+DataContainer.h
+/home/mononofu/Programmieren/TaskEngine/src/DataContainer.h
 
 /home/mononofu/Programmieren/TaskEngine/src/Threadmanager.cpp
 Threadmanager.h
 /home/mononofu/Programmieren/TaskEngine/src/Threadmanager.h
+InformationManager.h
+/home/mononofu/Programmieren/TaskEngine/src/InformationManager.h
 
 /home/mononofu/Programmieren/TaskEngine/src/Threadmanager.h
 Task.h

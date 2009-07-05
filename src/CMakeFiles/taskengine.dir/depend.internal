@@ -15,15 +15,28 @@ src/CMakeFiles/taskengine.dir/InformationManager.cpp.o
  /home/mononofu/Programmieren/TaskEngine/src/Destroyer.h
  /home/mononofu/Programmieren/TaskEngine/src/InformationManager.cpp
  /home/mononofu/Programmieren/TaskEngine/src/InformationManager.h
+ /home/mononofu/Programmieren/TaskEngine/src/SynchronisationBarrier.h
+ /home/mononofu/Programmieren/TaskEngine/src/Task.h
  /home/mononofu/Programmieren/TaskEngine/src/debug.h
 src/CMakeFiles/taskengine.dir/SynchronisationBarrier.cpp.o
  /home/mononofu/Programmieren/TaskEngine/src/SynchronisationBarrier.cpp
  /home/mononofu/Programmieren/TaskEngine/src/SynchronisationBarrier.h
 src/CMakeFiles/taskengine.dir/Task.cpp.o
+ /home/mononofu/Programmieren/TaskEngine/src/DataContainer.h
+ /home/mononofu/Programmieren/TaskEngine/src/DataIdentifier.h
+ /home/mononofu/Programmieren/TaskEngine/src/DataProvider.h
+ /home/mononofu/Programmieren/TaskEngine/src/Destroyer.h
+ /home/mononofu/Programmieren/TaskEngine/src/InformationManager.h
  /home/mononofu/Programmieren/TaskEngine/src/SynchronisationBarrier.h
  /home/mononofu/Programmieren/TaskEngine/src/Task.cpp
  /home/mononofu/Programmieren/TaskEngine/src/Task.h
+ /home/mononofu/Programmieren/TaskEngine/src/debug.h
 src/CMakeFiles/taskengine.dir/Threadmanager.cpp.o
+ /home/mononofu/Programmieren/TaskEngine/src/DataContainer.h
+ /home/mononofu/Programmieren/TaskEngine/src/DataIdentifier.h
+ /home/mononofu/Programmieren/TaskEngine/src/DataProvider.h
+ /home/mononofu/Programmieren/TaskEngine/src/Destroyer.h
+ /home/mononofu/Programmieren/TaskEngine/src/InformationManager.h
  /home/mononofu/Programmieren/TaskEngine/src/SynchronisationBarrier.h
  /home/mononofu/Programmieren/TaskEngine/src/Task.h
  /home/mononofu/Programmieren/TaskEngine/src/Threadmanager.cpp

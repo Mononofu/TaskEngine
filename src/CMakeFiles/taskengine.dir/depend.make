@@ -14,15 +14,28 @@ src/CMakeFiles/taskengine.dir/InformationManager.cpp.o: src/DataProvider.h
 src/CMakeFiles/taskengine.dir/InformationManager.cpp.o: src/Destroyer.h
 src/CMakeFiles/taskengine.dir/InformationManager.cpp.o: src/InformationManager.cpp
 src/CMakeFiles/taskengine.dir/InformationManager.cpp.o: src/InformationManager.h
+src/CMakeFiles/taskengine.dir/InformationManager.cpp.o: src/SynchronisationBarrier.h
+src/CMakeFiles/taskengine.dir/InformationManager.cpp.o: src/Task.h
 src/CMakeFiles/taskengine.dir/InformationManager.cpp.o: src/debug.h
 
 src/CMakeFiles/taskengine.dir/SynchronisationBarrier.cpp.o: src/SynchronisationBarrier.cpp
 src/CMakeFiles/taskengine.dir/SynchronisationBarrier.cpp.o: src/SynchronisationBarrier.h
 
+src/CMakeFiles/taskengine.dir/Task.cpp.o: src/DataContainer.h
+src/CMakeFiles/taskengine.dir/Task.cpp.o: src/DataIdentifier.h
+src/CMakeFiles/taskengine.dir/Task.cpp.o: src/DataProvider.h
+src/CMakeFiles/taskengine.dir/Task.cpp.o: src/Destroyer.h
+src/CMakeFiles/taskengine.dir/Task.cpp.o: src/InformationManager.h
 src/CMakeFiles/taskengine.dir/Task.cpp.o: src/SynchronisationBarrier.h
 src/CMakeFiles/taskengine.dir/Task.cpp.o: src/Task.cpp
 src/CMakeFiles/taskengine.dir/Task.cpp.o: src/Task.h
+src/CMakeFiles/taskengine.dir/Task.cpp.o: src/debug.h
 
+src/CMakeFiles/taskengine.dir/Threadmanager.cpp.o: src/DataContainer.h
+src/CMakeFiles/taskengine.dir/Threadmanager.cpp.o: src/DataIdentifier.h
+src/CMakeFiles/taskengine.dir/Threadmanager.cpp.o: src/DataProvider.h
+src/CMakeFiles/taskengine.dir/Threadmanager.cpp.o: src/Destroyer.h
+src/CMakeFiles/taskengine.dir/Threadmanager.cpp.o: src/InformationManager.h
 src/CMakeFiles/taskengine.dir/Threadmanager.cpp.o: src/SynchronisationBarrier.h
 src/CMakeFiles/taskengine.dir/Threadmanager.cpp.o: src/Task.h
 src/CMakeFiles/taskengine.dir/Threadmanager.cpp.o: src/Threadmanager.cpp

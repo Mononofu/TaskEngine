@@ -22,6 +22,7 @@
 #define TASK_H
 
 #include "SynchronisationBarrier.h"
+#include "DataContainer.h"
 
 class Threadmanager;
 
@@ -33,7 +34,9 @@ class Task
 		void stop();
 		void setSpeedFactor ( int factor );		// Only applied when in lock_step mode - determines how many steps this task executes before it waits at the barrier
 		bool step();
+		void handleAppEvents(const DataContainer& data);
 		friend class Threadmanager;
+		friend class InformationManager;
 	protected:
 		void mainLoop();
 		virtual bool doStep() = 0;
@@ -47,12 +50,14 @@ class Task
 		virtual void threadWillStop() { }		// Is called before terminating the thread
 		double timeSinceLastFrame();
 		bool running;
+		
 	private:
 		boost::posix_time::ptime now;
 		SynchronisationBarrier* barrier;
 		int speedFactor;
 		long lastFrameTime;
 		boost::thread *thisThread;
+		std::string name;
 };
 
 #endif
