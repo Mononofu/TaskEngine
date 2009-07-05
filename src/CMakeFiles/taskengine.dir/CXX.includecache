@@ -91,6 +91,8 @@ InformationManager.h
 /home/mononofu/Programmieren/TaskEngine/src/InformationManager.h
 debug.h
 /home/mononofu/Programmieren/TaskEngine/src/debug.h
+boost/foreach.hpp
+-
 
 /home/mononofu/Programmieren/TaskEngine/src/Task.h
 SynchronisationBarrier.h

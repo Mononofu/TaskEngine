@@ -90,7 +90,7 @@ class InformationManager : public Task
 		 * @param callback function to call, example for a class member: boost::bind( &MyClass::MyFunction, instance, _1 )  
 		 * 		   [the _1 is there to indicate that this function takes exaclty one parameter, namely of type DataContainer&]
 		 */
-		void subscribeToFeed ( std::string feedName, const boost::function< void (const DataContainer&) >& callback );
+		void subscribeToFeed ( std::string feedName, Task* callback );
 		
 		// returns a pointer to the singleton
 		static InformationManager* Instance();
@@ -104,7 +104,7 @@ class InformationManager : public Task
 		static InformationManager* instance;
 		static Destroyer<InformationManager> myDestroyer;
 		std::map<std::string, DataProvider *> offeredData;
-		std::map<std::string, std::vector< boost::function<void (const DataContainer&) > > > subscribers;
+		std::map<std::string, std::vector< Task* > > subscribers;
 		std::vector< std::pair< std::string, DataContainer > > postedData;
 		boost::mutex subscriberMutex;
 		boost::mutex providerMutex;

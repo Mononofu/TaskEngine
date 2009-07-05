@@ -65,29 +65,36 @@ DataContainer InformationManager::requestData ( const DataIdentifier& id, int tr
 
 void InformationManager::postDataToFeed ( std::string feedName, const DataContainer& data )
 {
-	boost::mutex::scoped_lock lock(postDataMutex);
-	postedData.push_back( make_pair(feedName, data) );
+	{
+		boost::mutex::scoped_lock lock(postDataMutex);
+		postedData.push_back( make_pair(feedName, data) );
+	}
+	//doStep();
 }
 
 bool InformationManager::doStep()
 {
+	boost::this_thread::sleep ( boost::posix_time::milliseconds ( 1 ) );
 	boost::mutex::scoped_lock lock(postDataMutex);
-	std::pair< std::string, DataContainer > data;
-	foreach( data, postedData)
+	if ( postedData.size() > 0 )
 	{
-		if ( subscribers[data.first].size() > 0 )
+		std::pair< std::string, DataContainer > data;
+		foreach( data, postedData)
 		{
-			foreach( boost::function<void (const DataContainer&) > callback, subscribers[data.first])
+			if ( subscribers[data.first].size() > 0 )
 			{
-				callback( data.second );
+				foreach( Task* callback, subscribers[data.first])
+				{
+					callback->recieveData( data.first, data.second );
+				}
 			}
 		}
+		postedData.clear();
 	}
-	postedData.clear();
 	return true;
 }
 
-void InformationManager::subscribeToFeed ( std::string feedName, const boost::function< void (const DataContainer&) >& callback )
+void InformationManager::subscribeToFeed ( std::string feedName, Task* callback )
 {
 	boost::mutex::scoped_lock lock(subscriberMutex);
 	subscribers[feedName].push_back ( callback );

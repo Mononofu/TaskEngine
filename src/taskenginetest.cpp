@@ -10,7 +10,7 @@ class Foo
 	public:
 		Foo();
 		void doSomething();
-		void printIt ( const DataContainer& data );
+		void recieveData( const std::string& feedName, const DataContainer& data);
 };
 
 class Baz : public Task
@@ -105,7 +105,7 @@ void Foo::doSomething()
 	int num = boost::any_cast<int> ( data.data );
 	std::cout << num << std::endl;
 
-	InformationManager::Instance()->subscribeToFeed ( "system", boost::bind( &Foo::printIt, this, _1) );
+	//InformationManager::Instance()->subscribeToFeed ( "system", this );
 
 	Threadmanager myManager;
 	myManager.setThreadingMode ( THREADING_FREE_WHEELING );
@@ -118,10 +118,10 @@ void Foo::doSomething()
 	myManager.waitForThreadsToFinish();
 }
 
-void Foo::printIt ( const DataContainer& data )
+void Foo::recieveData( const std::string& feedName, const DataContainer& data)
 {
 	std::string myString = boost::any_cast<std::string> ( data.data );
-	Dout << "Received data: " << myString;
+	Dout << "Received data: " << myString << " for feed: " << feedName;
 }
 
 

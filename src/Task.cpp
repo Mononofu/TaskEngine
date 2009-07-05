@@ -25,6 +25,10 @@
 #include "InformationManager.h"
 #include "debug.h"
 
+#include <boost/foreach.hpp>
+#define foreach         BOOST_FOREACH
+#define reverse_foreach BOOST_REVERSE_FOREACH
+
 Task::Task()
 {
 	this->barrier = NULL;
@@ -44,6 +48,7 @@ boost::thread* Task::run()
 bool Task::step()
 {
 	lastFrameTime = (boost::posix_time::microsec_clock::local_time().time_of_day() - now.time_of_day()).total_nanoseconds();
+	distributeData();
 	bool result = doStep();
 	now = boost::posix_time::microsec_clock::local_time();
 	return result;
@@ -52,7 +57,7 @@ bool Task::step()
 void Task::mainLoop()
 {
 	InformationManager::Instance()->postDataToFeed( "thread_event", DataContainer(THREAD_STARTING) );
-	InformationManager::Instance()->subscribeToFeed("app_event", boost::bind( &Task::handleAppEvents, this, _1));
+	subscribeToFeed("app_event", boost::bind( &Task::handleAppEvents, this, _1));
 	this->threadWillStart();
 	InformationManager::Instance()->postDataToFeed( "thread_event", DataContainer(THREAD_STARTED) );
 	while ( running )
@@ -96,4 +101,30 @@ void Task::setSynchronisationBarrier ( SynchronisationBarrier* barrier )
 double Task::timeSinceLastFrame()
 {
 	return lastFrameTime / 1000000.0;
+}
+
+void Task::subscribeToFeed ( const std::string& feedName, const boost::function< void (const DataContainer&) >& callback )
+{
+	subscribers[feedName].push_back ( callback );
+	InformationManager::Instance()->subscribeToFeed ( feedName, this );
+}
+
+void Task::recieveData( const std::string& feedName, const DataContainer& data)
+{
+	boost::mutex::scoped_lock lock(recieveDataMutex);
+	recievedData.push_back( make_pair(feedName, data) );
+}
+
+void Task::distributeData()
+{
+	boost::mutex::scoped_lock lock(recieveDataMutex);
+	std::pair< std::string, DataContainer > data;
+	foreach( data, recievedData)
+	{
+		foreach( boost::function<void (const DataContainer&) > callback, subscribers[data.first] )
+		{
+			callback(data.second);
+		}
+	}
+	recievedData.clear();
 }

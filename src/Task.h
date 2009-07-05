@@ -48,10 +48,16 @@ class Task
 		}
 		virtual void threadWillStart() { }		// Is called after creating the thread, in the context of the thread, but before starting with "doStep()"
 		virtual void threadWillStop() { }		// Is called before terminating the thread
+		void subscribeToFeed ( const std::string& feedName, const boost::function< void (const DataContainer&) >& callback );
+		void recieveData( const std::string& feedName, const DataContainer& data);
 		double timeSinceLastFrame();
 		bool running;
 		
 	private:
+		void distributeData();
+		std::map<std::string, std::vector< boost::function<void (const DataContainer&) > > > subscribers;
+		std::vector< std::pair< std::string, DataContainer > > recievedData;
+		boost::mutex recieveDataMutex;
 		boost::posix_time::ptime now;
 		SynchronisationBarrier* barrier;
 		int speedFactor;
