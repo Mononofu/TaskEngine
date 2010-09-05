@@ -23,6 +23,8 @@
 
 #include "SynchronisationBarrier.h"
 #include "DataContainer.h"
+#include "boost/function.hpp"
+#include <vector>
 
 class Threadmanager;
 

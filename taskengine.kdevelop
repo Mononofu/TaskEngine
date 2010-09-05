@@ -1,9 +1,9 @@
 <?xml version = '1.0'?>
 <kdevelop>
   <general>
-    <projectmanagement>KDevCustomProject</projectmanagement>
-    <projectdirectory>/home/mononofu/Programmieren/TaskEngine</projectdirectory>
-    <absoluteprojectpath>true</absoluteprojectpath>
+  <projectmanagement>KDevCustomProject</projectmanagement>
+  <projectdirectory>/home/mononofu/Programmieren/TaskEngine</projectdirectory>
+  <absoluteprojectpath>true</absoluteprojectpath>
     <author/>
     <email/>
     <version>$VERSION$</version>
@@ -189,9 +189,9 @@
   </substmap>
   <kdevdebugger>
     <general>
-      <projectmanagement>KDevCustomProject</projectmanagement>
-      <projectdirectory>/home/mononofu/Programmieren/TaskEngine</projectdirectory>
-      <absoluteprojectpath>true</absoluteprojectpath>
+  <projectmanagement>KDevCustomProject</projectmanagement>
+  <projectdirectory>/home/mononofu/Programmieren/TaskEngine</projectdirectory>
+  <absoluteprojectpath>true</absoluteprojectpath>
       <gdbpath/>
       <dbgshell/>
       <configGdbScript/>

@@ -7,7 +7,6 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/taskengine.dir/debug.cpp.o"
   "CMakeFiles/taskengine.dir/DataContainer.cpp.o"
   "libtaskengine.pdb"
-  "libtaskengine.a"
   "libtaskengine.so"
 )
 

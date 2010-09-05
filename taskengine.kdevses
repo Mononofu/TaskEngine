@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <!DOCTYPE KDevPrjSession>
 <KDevPrjSession>
- <DocsAndViews NumberOfDocuments="20" >
+ <DocsAndViews NumberOfDocuments="21" >
   <Doc0 NumberOfViews="1" URL="file:///home/mononofu/Programmieren/TaskEngine/src/InformationManager.h" >
    <View0 Encoding="" Type="Source" />
   </Doc0>
@@ -60,25 +60,15 @@
    <View0 Encoding="" Type="Source" />
   </Doc18>
   <Doc19 NumberOfViews="1" URL="file:///home/mononofu/Programmieren/TaskEngine/src/DataContainer.cpp" >
-   <View0 Encoding="" line="0" Type="Source" />
+   <View0 Encoding="" Type="Source" />
   </Doc19>
+  <Doc20 NumberOfViews="1" URL="file:///home/mononofu/Programmieren/TaskEngine/src/debug.cpp" >
+   <View0 Encoding="" line="0" Type="Source" />
+  </Doc20>
  </DocsAndViews>
  <pluginList>
   <kdevdebugger>
-   <breakpointList>
-    <breakpoint0 location="/home/mononofu/Programmieren/TaskEngine/src/taskenginetest.cpp:131" type="1" tracingFormatString="" traceFormatStringEnabled="0" condition="" tracingEnabled="0" enabled="1" >
-     <tracedExpressions/>
-    </breakpoint0>
-    <breakpoint1 location="/home/mononofu/Programmieren/TaskEngine/src/Threadmanager.cpp:95" type="1" tracingFormatString="" traceFormatStringEnabled="0" condition="" tracingEnabled="0" enabled="1" >
-     <tracedExpressions/>
-    </breakpoint1>
-    <breakpoint2 location="/home/mononofu/Programmieren/TaskEngine/src/Threadmanager.cpp:96" type="1" tracingFormatString="" traceFormatStringEnabled="0" condition="" tracingEnabled="0" enabled="1" >
-     <tracedExpressions/>
-    </breakpoint2>
-    <breakpoint3 location="/home/mononofu/Programmieren/TaskEngine/src/Threadmanager.cpp:97" type="1" tracingFormatString="" traceFormatStringEnabled="0" condition="" tracingEnabled="0" enabled="1" >
-     <tracedExpressions/>
-    </breakpoint3>
-   </breakpointList>
+   <breakpointList/>
    <showInternalCommands value="0" />
   </kdevdebugger>
   <kdevastyle>
